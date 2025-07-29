@@ -110,10 +110,10 @@ const StatisticBar = ({theme}) => {
     const [newsCache, setNewsCache] = useState({});
     // News topics (will be populated from API)
     const [NEWS_TOPICS, setNEWS_TOPICS] = useState([
-        'All', 'Politics', 'Economy', 'Technology', 'Health', 'Environment',
-        'Sports', 'Entertainment', 'Science', 'Education', 'Crime', 'Military',
-        'Diplomacy', 'Transport', 'Energy', 'Weather', 'Culture', 'Business',
-        'International', 'Local', 'Conflict'
+        'All', 'Business', 'Crime', 'Culture', 'Diplomacy', 'Economy',
+        'Education', 'Energy', 'Entertainment', 'Environment', 'Health',
+        'International', 'Local', 'Military', 'Politics', 'Science',
+        'Sports', 'Technology', 'Transport', 'Weather'
     ]);
 
     const [selectedTopic, setSelectedTopic] = useState('All');

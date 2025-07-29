@@ -385,25 +385,25 @@ def get_news_categories():
     """Get available news categories"""
     categories = [
         'All',
-        'Politics',
-        'Economy',
-        'Technology',
-        'Health',
-        'Environment',
-        'Sports',
-        'Entertainment',
-        'Science',
-        'Education',
-        'Crime',
-        'Military',
-        'Diplomacy',
-        'Transport',
-        'Energy',
-        'Weather',
-        'Culture',
         'Business',
+        'Crime',
+        'Culture',
+        'Diplomacy',
+        'Economy',
+        'Education',
+        'Energy',
+        'Entertainment',
+        'Environment',
+        'Health',
         'International',
-        'Local'
+        'Local',
+        'Military',
+        'Politics',
+        'Science',
+        'Sports',
+        'Technology',
+        'Transport',
+        'Weather'
     ]
     
     return jsonify({
