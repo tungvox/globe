@@ -462,6 +462,48 @@ const StatisticBar = ({theme}) => {
         return `${(cloudCover * 100).toFixed(1)}%`;
     };
 
+    // Function to detect category from article content
+    const detectCategory = (article) => {
+        const title = (article.title || '').toLowerCase();
+        const summary = (article.summary || '').toLowerCase();
+        const content = `${title} ${summary}`;
+        
+        // Define category keywords
+        const categoryKeywords = {
+            'Politics': ['politics', 'government', 'election', 'vote', 'president', 'congress', 'senate', 'democrat', 'republican', 'policy', 'legislation'],
+            'Economy': ['economy', 'economic', 'finance', 'financial', 'market', 'stock', 'trading', 'business', 'investment', 'recession', 'inflation', 'gdp'],
+            'Technology': ['technology', 'tech', 'software', 'ai', 'artificial intelligence', 'digital', 'innovation', 'startup', 'app', 'platform', 'cyber'],
+            'Health': ['health', 'medical', 'medicine', 'hospital', 'doctor', 'patient', 'disease', 'treatment', 'vaccine', 'covid', 'pandemic', 'healthcare'],
+            'Environment': ['environment', 'climate', 'environmental', 'pollution', 'sustainability', 'green', 'renewable', 'carbon', 'emissions', 'global warming'],
+            'Sports': ['sports', 'football', 'basketball', 'baseball', 'soccer', 'tennis', 'olympics', 'championship', 'tournament', 'athlete', 'team'],
+            'Entertainment': ['entertainment', 'movie', 'film', 'music', 'celebrity', 'hollywood', 'actor', 'actress', 'album', 'concert', 'award'],
+            'Science': ['science', 'scientific', 'research', 'study', 'discovery', 'experiment', 'laboratory', 'scientist', 'physics', 'chemistry', 'biology'],
+            'Education': ['education', 'school', 'university', 'college', 'student', 'teacher', 'academic', 'learning', 'curriculum', 'scholarship'],
+            'Crime': ['crime', 'criminal', 'police', 'law enforcement', 'arrest', 'investigation', 'trial', 'court', 'justice', 'legal'],
+            'Military': ['military', 'defense', 'army', 'navy', 'air force', 'weapon', 'soldier', 'veteran', 'defense', 'strategic'],
+            'Diplomacy': ['diplomacy', 'diplomatic', 'foreign', 'international relations', 'embassy', 'ambassador', 'treaty', 'alliance'],
+            'Transport': ['transport', 'transportation', 'airline', 'airport', 'railway', 'highway', 'traffic', 'vehicle', 'automotive'],
+            'Energy': ['energy', 'oil', 'gas', 'petroleum', 'renewable', 'solar', 'wind', 'nuclear', 'power plant', 'electricity'],
+            'Weather': ['weather', 'climate', 'storm', 'hurricane', 'tornado', 'forecast', 'temperature', 'rain', 'snow'],
+            'Culture': ['culture', 'cultural', 'art', 'museum', 'heritage', 'tradition', 'festival', 'exhibition', 'gallery'],
+            'Business': ['business', 'corporate', 'company', 'enterprise', 'industry', 'commercial', 'trade', 'commerce'],
+            'International': ['international', 'global', 'world', 'foreign', 'overseas', 'multinational'],
+            'Local': ['local', 'community', 'neighborhood', 'city', 'town', 'regional', 'municipal'],
+            'Conflict': ['conflict', 'war', 'battle', 'fighting', 'combat', 'military conflict', 'armed', 'violence', 'hostility']
+        };
+        
+        // Check each category
+        for (const [category, keywords] of Object.entries(categoryKeywords)) {
+            for (const keyword of keywords) {
+                if (content.includes(keyword)) {
+                    return category;
+                }
+            }
+        }
+        
+        return 'General';
+    };
+
 
 
     // Fetch news when News tab, marker, or topic changes
@@ -1993,6 +2035,22 @@ const StatisticBar = ({theme}) => {
                                                                     <Typography variant="body2" sx={{ color: '#d4d4dc', fontSize: '0.6rem', opacity: 0.8 }}>
                                                                         {article.published}
                                                                     </Typography>
+                                                                    
+                                                                    {/* Category Chip - only show when "All" is selected */}
+                                                                    {selectedTopic === 'All' && (
+                                                                        <Box sx={{ 
+                                                                            px: 0.5, 
+                                                                            py: 0.125, 
+                                                                            backgroundColor: 'rgba(52, 152, 219, 0.2)', 
+                                                                            borderRadius: 0.25,
+                                                                            border: '1px solid rgba(52, 152, 219, 0.4)',
+                                                                            ml: 'auto'
+                                                                        }}>
+                                                                            <Typography variant="body2" sx={{ color: '#3498db', fontSize: '0.6rem', fontWeight: 600 }}>
+                                                                                {detectCategory(article)}
+                                                                            </Typography>
+                                                                        </Box>
+                                                                    )}
 
                                                                 </Box>
                                                             </Box>
