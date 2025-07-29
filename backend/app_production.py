@@ -19,7 +19,8 @@ app = Flask(__name__)
 
 # Production CORS configuration
 CORS(app, origins=[
-    "https://your-vercel-domain.vercel.app",  # Replace with your actual Vercel domain
+    "https://globe-d7f6cmn3t-tungvoxs-projects.vercel.app",  # Your actual Vercel domain
+    "https://globe-backend.onrender.com",  # Your backend domain
     "http://localhost:3000",  # For local development
     "http://localhost:5173",  # For Vite dev server
 ], supports_credentials=True)
@@ -27,7 +28,8 @@ CORS(app, origins=[
 # Production SocketIO configuration
 socketio = SocketIO(app, 
     cors_allowed_origins=[
-        "https://your-vercel-domain.vercel.app",  # Replace with your actual Vercel domain
+        "https://globe-d7f6cmn3t-tungvoxs-projects.vercel.app",  # Your actual Vercel domain
+        "https://globe-backend.onrender.com",  # Your backend domain
         "http://localhost:3000",
         "http://localhost:5173"
     ],

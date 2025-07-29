@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: globe-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app_production.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.7
+      - key: COPERNICUS_USERNAME
+        sync: false
+      - key: COPERNICUS_PASSWORD
+        sync: false 
