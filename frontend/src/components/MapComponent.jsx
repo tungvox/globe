@@ -19,6 +19,7 @@ import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import CircularProgress from '@mui/material/CircularProgress';
+import { buildApiUrl, SOCKET_URL } from '../config';
 
 // Styled components
 const StyledDialog = styled(Dialog)(({ theme }) => ({
@@ -325,7 +326,7 @@ const MapComponent = () => {
 
       // Fetch location-specific features
       console.log('Fetching features for popup...');
-      const response = await fetch('http://localhost:5000/fetch_demo_data');
+      const response = await fetch(buildApiUrl('/fetch_demo_data'));
       if (!response.ok) return;
       
       const demoData = await response.json();
@@ -470,7 +471,7 @@ const MapComponent = () => {
   const fetchDemoDataFromBackend = async () => {
     try {
       console.log('Fetching demo data from backend...');
-      const response = await fetch('http://localhost:5000/fetch_demo_data');
+      const response = await fetch(buildApiUrl('/fetch_demo_data'));
       if (!response.ok) {
         throw new Error(`Error fetching demo data: ${response.statusText}`);
       }
@@ -497,7 +498,7 @@ const MapComponent = () => {
 
   useEffect(() => {
     // Initialize socket connection
-    const newSocket = io('http://localhost:5000');
+            const newSocket = io(SOCKET_URL);
     
     newSocket.on('connect', () => {
       console.log('Connected to WebSocket');
@@ -749,13 +750,13 @@ const MapComponent = () => {
           console.log('Fetching collection metadata for:', selectedMarker.name);
           
           // First ensure demo data is cached
-          const demoResponse = await fetch('http://localhost:5000/fetch_demo_data');
+          const demoResponse = await fetch(buildApiUrl('/fetch_demo_data'));
           if (!demoResponse.ok) {
             console.error('Failed to fetch demo data for collection metadata');
             return;
           }
           
-          const response = await fetch(`http://localhost:5000/collection/${selectedMarker.name}`);
+          const response = await fetch(buildApiUrl(`/collection/${selectedMarker.name}`));
           console.log('Collection metadata response status:', response.status);
           if (response.ok) {
             const collectionData = await response.json();
@@ -787,14 +788,14 @@ const MapComponent = () => {
           console.log('Fetching location points for:', selectedMarker.name);
           
           // First ensure demo data is cached
-          const demoResponse = await fetch('http://localhost:5000/fetch_demo_data');
+          const demoResponse = await fetch(buildApiUrl('/fetch_demo_data'));
           if (!demoResponse.ok) {
             console.error('Failed to fetch demo data for location points');
             setLocationPoints([]);
             return;
           }
           
-          const response = await fetch(`http://localhost:5000/locations/${selectedMarker.name}`);
+          const response = await fetch(buildApiUrl(`/locations/${selectedMarker.name}`));
           if (response.ok) {
             const data = await response.json();
             console.log('Location points fetched:', data.locations?.length || 0);

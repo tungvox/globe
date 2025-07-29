@@ -24,6 +24,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
+import { buildApiUrl } from '../config';
 
 // Styled components for better visual appeal
 const StyledPaper = styled(Paper)(({ theme }) => ({
@@ -190,7 +191,7 @@ const StatisticBar = ({theme}) => {
             console.log('Fetching summary for collection:', collectionName);
             
             // First ensure demo data is cached by calling fetch_demo_data
-            const demoResponse = await fetch('http://localhost:5000/fetch_demo_data');
+            const demoResponse = await fetch(buildApiUrl('/fetch_demo_data'));
             if (!demoResponse.ok) {
                 throw new Error(`Error fetching demo data: ${demoResponse.statusText}`);
             }
@@ -203,7 +204,7 @@ const StatisticBar = ({theme}) => {
             }
             
             // Now fetch the summary
-            const response = await fetch(`http://localhost:5000/summary/${collectionName}`);
+            const response = await fetch(buildApiUrl(`/summary/${collectionName}`));
             if (!response.ok) {
                 throw new Error(`Error fetching summary data: ${response.statusText}`);
             }
