@@ -132,7 +132,7 @@ const StatisticBar = ({theme}) => {
         'Terrorism',
         'Migration',
     ];
-    const [selectedTopic, setSelectedTopic] = useState('Conflict');
+    const [selectedTopic, setSelectedTopic] = useState('All');
     // Geocode cache to avoid hitting Nominatim rate limit
     const geocodeCache = {};
     const [geocoding, setGeocoding] = useState(false);
@@ -474,6 +474,42 @@ const StatisticBar = ({theme}) => {
             return 'Not Available';
         }
         return `${(cloudCover * 100).toFixed(1)}%`;
+    };
+
+    // Function to detect category from article content
+    const detectCategory = (article) => {
+        const text = `${article.title} ${article.summary}`.toLowerCase();
+        
+        const categoryKeywords = {
+            'Conflict': ['war', 'conflict', 'battle', 'fighting', 'military', 'attack', 'violence', 'bombing', 'strike'],
+            'Disaster': ['disaster', 'earthquake', 'flood', 'hurricane', 'tsunami', 'fire', 'accident', 'emergency'],
+            'Economy': ['economy', 'economic', 'finance', 'market', 'trade', 'business', 'investment', 'stock', 'gdp'],
+            'Health': ['health', 'medical', 'disease', 'hospital', 'vaccine', 'treatment', 'covid', 'pandemic'],
+            'Politics': ['politics', 'political', 'election', 'government', 'president', 'minister', 'parliament'],
+            'Environment': ['environment', 'climate', 'pollution', 'green', 'sustainability', 'carbon', 'renewable'],
+            'Crime': ['crime', 'criminal', 'police', 'arrest', 'investigation', 'trial', 'court', 'law'],
+            'Technology': ['technology', 'tech', 'digital', 'ai', 'software', 'internet', 'cyber', 'innovation'],
+            'Military': ['military', 'defense', 'army', 'navy', 'air force', 'weapon', 'defense'],
+            'Diplomacy': ['diplomacy', 'diplomatic', 'embassy', 'foreign', 'international', 'treaty'],
+            'Protest': ['protest', 'demonstration', 'rally', 'strike', 'movement', 'activist'],
+            'Energy': ['energy', 'oil', 'gas', 'electricity', 'power', 'fuel', 'renewable'],
+            'Transport': ['transport', 'transportation', 'traffic', 'road', 'airport', 'railway', 'vehicle'],
+            'Education': ['education', 'school', 'university', 'student', 'learning', 'academic'],
+            'Sports': ['sport', 'football', 'basketball', 'tennis', 'olympic', 'championship', 'game'],
+            'Culture': ['culture', 'art', 'music', 'film', 'theater', 'festival', 'heritage'],
+            'Weather': ['weather', 'climate', 'temperature', 'storm', 'rain', 'sunny', 'forecast'],
+            'Elections': ['election', 'vote', 'polling', 'candidate', 'campaign', 'ballot'],
+            'Terrorism': ['terrorism', 'terrorist', 'bomb', 'attack', 'extremist', 'security'],
+            'Migration': ['migration', 'refugee', 'immigration', 'border', 'asylum', 'migrant']
+        };
+        
+        for (const [category, keywords] of Object.entries(categoryKeywords)) {
+            if (keywords.some(keyword => text.includes(keyword))) {
+                return category;
+            }
+        }
+        
+        return 'General';
     };
 
     // Fetch news when News tab, marker, or topic changes
@@ -1983,8 +2019,8 @@ const StatisticBar = ({theme}) => {
                                                                     </a>
                                                                 </Typography>
                                                                 
-                                                                {/* Source and Date */}
-                                                                <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mb: 0.5 }}>
+                                                                {/* Source, Date, and Category */}
+                                                                <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5, mb: 0.5, flexWrap: 'wrap' }}>
                                                                     {article.source && (
                                                                         <Box sx={{ 
                                                                             px: 0.5, 
@@ -2001,6 +2037,19 @@ const StatisticBar = ({theme}) => {
                                                                     <Typography variant="body2" sx={{ color: '#d4d4dc', fontSize: '0.6rem', opacity: 0.8 }}>
                                                                         {article.published}
                                                                     </Typography>
+                                                                    {/* Category Chip */}
+                                                                    <Box sx={{ 
+                                                                        px: 0.5, 
+                                                                        py: 0.125, 
+                                                                        backgroundColor: 'rgba(52, 152, 219, 0.2)', 
+                                                                        borderRadius: 0.25,
+                                                                        border: '1px solid rgba(52, 152, 219, 0.4)',
+                                                                        ml: 'auto'
+                                                                    }}>
+                                                                        <Typography variant="body2" sx={{ color: '#3498db', fontSize: '0.6rem', fontWeight: 600 }}>
+                                                                            {detectCategory(article)}
+                                                                        </Typography>
+                                                                    </Box>
                                                                 </Box>
                                                             </Box>
                                                             
