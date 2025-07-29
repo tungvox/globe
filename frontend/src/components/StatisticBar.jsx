@@ -152,6 +152,16 @@ const StatisticBar = ({theme}) => {
         setNewsError(null);
     }, [selectedMarker]);
 
+    // Reset news state when topic changes
+    useEffect(() => {
+        if (tabIndex === 2 && selectedMarker) {
+            console.log('Topic changed to:', selectedTopic, '- resetting news state');
+            setNewsAttempted(false);
+            setNewsArticles([]);
+            setNewsError(null);
+        }
+    }, [selectedTopic]);
+
     // Debug useEffect for daily view
     useEffect(() => {
         if (selectedYear && selectedMonth) {
@@ -490,8 +500,10 @@ const StatisticBar = ({theme}) => {
                         query = 'news';
                     }
 
-                    // Create cache key
+                    // Create cache key with topic included
                     const cacheKey = `${selectedMarker.name}_${selectedTopic}_${query}`;
+                    console.log('News cache key:', cacheKey);
+                    console.log('Available cache keys:', Object.keys(newsCache));
                     
                     // Check if we have cached data
                     if (newsCache[cacheKey]) {
@@ -566,7 +578,7 @@ const StatisticBar = ({theme}) => {
             };
             fetchNews();
         }
-    }, [tabIndex, selectedMarker, selectedTopic, newsCache]);
+    }, [tabIndex, selectedMarker, selectedTopic]);
 
     async function getPlaceNameFromCoords(lat, lon) {
         // Respect Nominatim's rate limit: 1 request/sec
