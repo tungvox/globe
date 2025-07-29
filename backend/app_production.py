@@ -18,21 +18,25 @@ load_dotenv()
 app = Flask(__name__)
 
 # Production CORS configuration
-CORS(app, origins=[
-    "https://globe-d7f6cmn3t-tungvoxs-projects.vercel.app",  # Your actual Vercel domain
+allowed_origins = [
+    "https://globe-jvaox3vb4-tungvoxs-projects.vercel.app",  # Your new Vercel domain
+    "https://globe-d7f6cmn3t-tungvoxs-projects.vercel.app",  # Your old Vercel domain
     "https://globe-1-hduo.onrender.com",  # Your backend domain
     "http://localhost:3000",  # For local development
     "http://localhost:5173",  # For Vite dev server
-], supports_credentials=True)
+]
+
+# Add any vercel.app domains dynamically
+import os
+vercel_url = os.getenv('VERCEL_URL')
+if vercel_url:
+    allowed_origins.append(f"https://{vercel_url}")
+
+CORS(app, origins=allowed_origins, supports_credentials=True)
 
 # Production SocketIO configuration
 socketio = SocketIO(app, 
-    cors_allowed_origins=[
-        "https://globe-d7f6cmn3t-tungvoxs-projects.vercel.app",  # Your actual Vercel domain
-        "https://globe-1-hduo.onrender.com",  # Your backend domain
-        "http://localhost:3000",
-        "http://localhost:5173"
-    ],
+    cors_allowed_origins=allowed_origins,
     logger=True,
     engineio_logger=True
 )
