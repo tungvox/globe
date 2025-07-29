@@ -492,7 +492,7 @@ const StatisticBar = ({theme}) => {
                     setNewsArticles([]);
                     setUsingCache(false);
 
-                    const url = `/google_news?q=${encodeURIComponent(query)}`;
+                    const url = buildApiUrl(`/google_news?q=${encodeURIComponent(query)}`);
                     const response = await fetch(url);
                     const contentType = response.headers.get('content-type');
                     const text = await response.text();

@@ -11,7 +11,7 @@ export default defineConfig({
         changeOrigin: true,
         secure: false
       },
-      '/google_news': 'http://localhost:5000',
+      // Note: /google_news proxy removed - using buildApiUrl() instead
     }
   },
   build: {
