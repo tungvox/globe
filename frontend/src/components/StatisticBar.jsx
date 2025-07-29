@@ -150,19 +150,18 @@ const StatisticBar = ({theme}) => {
             setCategoriesLoading(true);
             const fetchCategories = async () => {
                 try {
-                    // Fetch a small sample of news to get categories
-                    const url = buildApiUrl('/google_news?q=news&limit=5');
+                    // Fetch categories from dedicated endpoint
+                    const url = buildApiUrl('/news_categories');
                     console.log('Fetching categories from:', url);
                     const response = await fetch(url);
                     const data = await response.json();
                     console.log('Categories API response:', data);
                     
-                    if (data.available_categories && Array.isArray(data.available_categories)) {
-                        const categories = ['All', ...data.available_categories];
-                        setNEWS_TOPICS(categories);
-                        console.log('Categories fetched:', categories);
+                    if (data.categories && Array.isArray(data.categories)) {
+                        setNEWS_TOPICS(data.categories);
+                        console.log('Categories fetched:', data.categories);
                     } else {
-                        console.log('No available_categories in response');
+                        console.log('No categories in response');
                     }
                 } catch (error) {
                     console.error('Error fetching categories:', error);
@@ -486,10 +485,7 @@ const StatisticBar = ({theme}) => {
         return `${(cloudCover * 100).toFixed(1)}%`;
     };
 
-    // Function to get category from article (from API)
-    const getCategory = (article) => {
-        return article.category || 'General';
-    };
+
 
     // Fetch news when News tab, marker, or topic changes
     useEffect(() => {
@@ -575,11 +571,7 @@ const StatisticBar = ({theme}) => {
                                 setNewsArticles(data.news);
                                 setNewsError(null);
                                 
-                                // Update available categories from API response
-                                if (data.available_categories && Array.isArray(data.available_categories)) {
-                                    const categories = ['All', ...data.available_categories];
-                                    setNEWS_TOPICS(categories);
-                                }
+
                             } else {
                                 setNewsArticles([]);
                                 setNewsError('No news articles found for this location.');
@@ -2031,19 +2023,7 @@ const StatisticBar = ({theme}) => {
                                                                     <Typography variant="body2" sx={{ color: '#d4d4dc', fontSize: '0.6rem', opacity: 0.8 }}>
                                                                         {article.published}
                                                                     </Typography>
-                                                                    {/* Category Chip */}
-                                                                    <Box sx={{ 
-                                                                        px: 0.5, 
-                                                                        py: 0.125, 
-                                                                        backgroundColor: 'rgba(52, 152, 219, 0.2)', 
-                                                                        borderRadius: 0.25,
-                                                                        border: '1px solid rgba(52, 152, 219, 0.4)',
-                                                                        ml: 'auto'
-                                                                    }}>
-                                                                        <Typography variant="body2" sx={{ color: '#3498db', fontSize: '0.6rem', fontWeight: 600 }}>
-                                                                            {getCategory(article)}
-                                                                        </Typography>
-                                                                    </Box>
+
                                                                 </Box>
                                                             </Box>
                                                             
