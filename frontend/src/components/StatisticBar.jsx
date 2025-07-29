@@ -1225,22 +1225,23 @@ const StatisticBar = ({theme}) => {
                                         </ResponsiveContainer>
                                     </CardContent>
                                 </StatCard>
-                                ) : (
-                                    <Box sx={{ 
-                                        display: 'flex', 
-                                        flexDirection: 'column', 
-                                        alignItems: 'center', 
-                                        justifyContent: 'center', 
-                                        height: '200px',
-                                        gap: 2
-                                    }}>
-                                        <Typography variant="body2" sx={{ color: '#d4d4dc', textAlign: 'center' }}>
-                                            No data available for this location.
-                                        </Typography>
-                                    </Box>
-                                )}
                             </>
+                        ) : (
+                            <Box sx={{ 
+                                display: 'flex', 
+                                flexDirection: 'column', 
+                                alignItems: 'center', 
+                                justifyContent: 'center', 
+                                height: '200px',
+                                gap: 2
+                            }}>
+                                <Typography variant="body2" sx={{ color: '#d4d4dc', textAlign: 'center' }}>
+                                    No data available for this location.
+                                </Typography>
+                            </Box>
                         )}
+                    </>
+                )}
                         
                         {tabIndex === 1 && (
                             <Box sx={{ overflowY: 'auto', maxHeight: 'calc(100% - 200px)', pr: 1 }}>
@@ -1733,6 +1734,7 @@ const StatisticBar = ({theme}) => {
                                                 )}
                                             </CardContent>
                                         </StatCard>
+                                    </>
                                 ) : (
                                     <Box sx={{ 
                                         display: 'flex', 
