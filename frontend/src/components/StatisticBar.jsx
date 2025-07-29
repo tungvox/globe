@@ -90,6 +90,7 @@ const StatisticBar = ({theme}) => {
     }, []);
     const { selectedMarker, setSelectedMarker, renameMarker } = useAppContext();
     const [summary, setSummary] = useState(null);
+    const [summaryLoading, setSummaryLoading] = useState(false);
     const [tabIndex, setTabIndex] = useState(0);
     const [selectedYear, setSelectedYear] = useState(null);
     const [selectedMonth, setSelectedMonth] = useState(null);
@@ -188,6 +189,7 @@ const StatisticBar = ({theme}) => {
 
     const fetchSummaryData = async (collectionName) => {
         try {
+            setSummaryLoading(true);
             console.log('Fetching summary for collection:', collectionName);
             
             // First ensure demo data is cached by calling fetch_demo_data
@@ -223,6 +225,8 @@ const StatisticBar = ({theme}) => {
 
         } catch (error) {
             console.error('Error fetching summary data from backend:', error);
+        } finally {
+            setSummaryLoading(false);
         }
     };
 
@@ -423,6 +427,29 @@ const StatisticBar = ({theme}) => {
             <Typography variant="body2" sx={{ color: '#d4d4dc', fontSize: '0.7rem' }}>
                 {label}
             </Typography>
+        </Box>
+    );
+
+    const LoadingOrb = ({ size = 40, color = '#feda6a' }) => (
+        <Box sx={{ 
+            display: 'flex', 
+            justifyContent: 'center', 
+            alignItems: 'center',
+            height: size,
+            width: size
+        }}>
+            <Box sx={{
+                width: size * 0.6,
+                height: size * 0.6,
+                border: `3px solid rgba(254, 218, 106, 0.2)`,
+                borderTop: `3px solid ${color}`,
+                borderRadius: '50%',
+                animation: 'spin 1s linear infinite',
+                '@keyframes spin': {
+                    '0%': { transform: 'rotate(0deg)' },
+                    '100%': { transform: 'rotate(360deg)' }
+                }
+            }} />
         </Box>
     );
 
@@ -709,7 +736,23 @@ const StatisticBar = ({theme}) => {
                     <Divider sx={{ mb: 1.5, backgroundColor: 'rgba(255, 255, 255, 0.1)' }} />
 
                     <Box sx={{ overflowY: 'auto', maxHeight: 'calc(100% - 200px)', pr: 1 }}>
-                        {tabIndex === 0 && summary && (
+                        {tabIndex === 0 && (
+                            <>
+                                {summaryLoading ? (
+                                    <Box sx={{ 
+                                        display: 'flex', 
+                                        flexDirection: 'column', 
+                                        alignItems: 'center', 
+                                        justifyContent: 'center', 
+                                        height: '200px',
+                                        gap: 2
+                                    }}>
+                                        <LoadingOrb size={50} />
+                                        <Typography variant="body2" sx={{ color: '#d4d4dc', textAlign: 'center' }}>
+                                            Loading overview data...
+                                        </Typography>
+                                    </Box>
+                                ) : summary ? (
                             <>
                                 {/* Key Statistics Cards */}
                                 <Grid container spacing={2} sx={{ mb: 3 }}>
@@ -1182,12 +1225,40 @@ const StatisticBar = ({theme}) => {
                                         </ResponsiveContainer>
                                     </CardContent>
                                 </StatCard>
+                                ) : (
+                                    <Box sx={{ 
+                                        display: 'flex', 
+                                        flexDirection: 'column', 
+                                        alignItems: 'center', 
+                                        justifyContent: 'center', 
+                                        height: '200px',
+                                        gap: 2
+                                    }}>
+                                        <Typography variant="body2" sx={{ color: '#d4d4dc', textAlign: 'center' }}>
+                                            No data available for this location.
+                                        </Typography>
+                                    </Box>
+                                )}
                             </>
                         )}
                         
                         {tabIndex === 1 && (
                             <Box sx={{ overflowY: 'auto', maxHeight: 'calc(100% - 200px)', pr: 1 }}>
-                                {summary && (
+                                {summaryLoading ? (
+                                    <Box sx={{ 
+                                        display: 'flex', 
+                                        flexDirection: 'column', 
+                                        alignItems: 'center', 
+                                        justifyContent: 'center', 
+                                        height: '200px',
+                                        gap: 2
+                                    }}>
+                                        <LoadingOrb size={50} />
+                                        <Typography variant="body2" sx={{ color: '#d4d4dc', textAlign: 'center' }}>
+                                            Loading analytics data...
+                                        </Typography>
+                                    </Box>
+                                ) : summary ? (
                                     <>
                                         {/* Satellite Monitoring Overview */}
                                         <StatCard>
@@ -1662,7 +1733,19 @@ const StatisticBar = ({theme}) => {
                                                 )}
                                             </CardContent>
                                         </StatCard>
-                                    </>
+                                ) : (
+                                    <Box sx={{ 
+                                        display: 'flex', 
+                                        flexDirection: 'column', 
+                                        alignItems: 'center', 
+                                        justifyContent: 'center', 
+                                        height: '200px',
+                                        gap: 2
+                                    }}>
+                                        <Typography variant="body2" sx={{ color: '#d4d4dc', textAlign: 'center' }}>
+                                            No analytics data available for this location.
+                                        </Typography>
+                                    </Box>
                                 )}
                             </Box>
                         )}
