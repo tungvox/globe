@@ -113,7 +113,7 @@ const StatisticBar = ({theme}) => {
         'All', 'Politics', 'Economy', 'Technology', 'Health', 'Environment',
         'Sports', 'Entertainment', 'Science', 'Education', 'Crime', 'Military',
         'Diplomacy', 'Transport', 'Energy', 'Weather', 'Culture', 'Business',
-        'International', 'Local'
+        'International', 'Local', 'Conflict'
     ]);
 
     const [selectedTopic, setSelectedTopic] = useState('All');
