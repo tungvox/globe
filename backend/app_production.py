@@ -404,8 +404,12 @@ def test_news():
 def google_news():
     """Fetch Google News RSS feed"""
     try:
-        # Google News RSS feed URL
-        rss_url = "https://news.google.com/rss/search?q=satellite+data&hl=en-US&gl=US&ceid=US:en"
+        # Get query parameter from frontend
+        query = request.args.get('q', 'satellite+data')
+        logger.info(f"Google News query: {query}")
+        
+        # Google News RSS feed URL with dynamic query
+        rss_url = f"https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en"
         
         # Add timeout and headers to avoid blocking
         headers = {
