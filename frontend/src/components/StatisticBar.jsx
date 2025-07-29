@@ -502,16 +502,16 @@ const StatisticBar = ({theme}) => {
                     if (contentType && contentType.includes('application/json')) {
                         try {
                             const data = JSON.parse(text);
-                            if (data && data.articles && Array.isArray(data.articles)) {
+                            if (data && data.news && Array.isArray(data.news)) {
                                 // Cache the successful response
                                 setNewsCache(prev => ({
                                     ...prev,
                                     [cacheKey]: {
-                                        articles: data.articles,
+                                        articles: data.news,
                                         timestamp: Date.now()
                                     }
                                 }));
-                                setNewsArticles(data.articles);
+                                setNewsArticles(data.news);
                                 setNewsError(null);
                             } else {
                                 setNewsArticles([]);
