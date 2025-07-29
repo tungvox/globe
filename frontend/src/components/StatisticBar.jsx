@@ -435,7 +435,7 @@ const StatisticBar = ({theme}) => {
 
     // Fetch news when News tab, marker, or topic changes
     useEffect(() => {
-        if (tabIndex === 3 && selectedMarker) {
+                        if (tabIndex === 2 && selectedMarker) {
             const fetchNews = async () => {
                 try {
                     let query = '';
@@ -703,7 +703,6 @@ const StatisticBar = ({theme}) => {
                     >
                         <StyledTab label="Overview" />
                         <StyledTab label="Analytics" />
-                        <StyledTab label="Details" />
                         <StyledTab label="News" />
                     </StyledTabs>
 
@@ -1667,7 +1666,7 @@ const StatisticBar = ({theme}) => {
                                 )}
                             </Box>
                         )}
-                        {tabIndex === 3 && selectedMarker && (
+                        {tabIndex === 2 && selectedMarker && (
                             <>
                                 {/* Header Section */}
                                 <Box sx={{ mb: 2, pb: 1, borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
