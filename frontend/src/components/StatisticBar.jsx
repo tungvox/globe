@@ -538,7 +538,7 @@ const StatisticBar = ({theme}) => {
                     setUsingCache(false);
                     setNewsAttempted(true);
 
-                    const url = buildApiUrl(`/google_news?q=${encodeURIComponent(query)}`);
+                    const url = buildApiUrl(`/google_news?q=${encodeURIComponent(query)}&limit=25`);
                     console.log('Google News API URL being called:', url);
                     const response = await fetch(url);
                     const contentType = response.headers.get('content-type');

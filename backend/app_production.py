@@ -406,7 +406,9 @@ def google_news():
     try:
         # Get query parameter from frontend
         query = request.args.get('q', 'satellite+data')
-        logger.info(f"Google News query: {query}")
+        limit = int(request.args.get('limit', 20))  # Default to 20 articles, max 50
+        limit = min(limit, 50)  # Cap at 50 articles for performance
+        logger.info(f"Google News query: {query}, limit: {limit}")
         
         # Google News RSS feed URL with dynamic query
         rss_url = f"https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en"
@@ -425,7 +427,7 @@ def google_news():
             
             # Extract news items
             news_items = []
-            for entry in feed.entries[:10]:  # Limit to 10 items
+            for entry in feed.entries[:limit]:  # Use configurable limit
                 # Clean HTML from summary
                 summary = entry.summary if hasattr(entry, 'summary') else ''
                 # Remove HTML tags and decode HTML entities
