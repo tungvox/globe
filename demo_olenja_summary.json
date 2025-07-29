@@ -1,0 +1,1451 @@
+{
+  "average_cloud_cover": 0.2064109645082107,
+  "average_resolution": 0.5305288676671204,
+  "constellation_coverage": {
+    "beijing-3a": 4,
+    "capella-slc": 75,
+    "eros-b": 1,
+    "maxar-15cm": 39,
+    "maxar-30cm": 46,
+    "maxar-50cm": 147,
+    "pleaides": 439,
+    "pleaides-neo": 143,
+    "pleiades": 179,
+    "pleiades-neo": 93,
+    "pleiades-neo-hd15": 39,
+    "skysat": 143,
+    "spot": 116,
+    "triplesat": 2
+  },
+  "constellations": [
+    "beijing-3a",
+    "skysat",
+    "maxar-30cm",
+    "eros-b",
+    "spot",
+    "pleaides",
+    "triplesat",
+    "pleaides-neo",
+    "pleiades",
+    "pleiades-neo-hd15",
+    "maxar-50cm",
+    "capella-slc",
+    "maxar-15cm",
+    "pleiades-neo"
+  ],
+  "date_range": {
+    "date_span_days": 2296,
+    "earliest": "2019-03-02T00:00:00.000Z",
+    "latest": "2025-06-14T00:00:00.000Z",
+    "total_days": 573
+  },
+  "features_last_30_days": 30,
+  "features_per_year": {
+    "2019": {
+      "3": 4,
+      "4": 2,
+      "5": 3,
+      "6": 6,
+      "8": 1,
+      "9": 4
+    },
+    "2020": {
+      "5": 1,
+      "6": 21,
+      "7": 13,
+      "8": 14,
+      "9": 10,
+      "10": 8
+    },
+    "2021": {
+      "1": 3,
+      "2": 21,
+      "3": 27,
+      "4": 32,
+      "5": 15,
+      "6": 42,
+      "7": 10,
+      "8": 29,
+      "9": 24,
+      "10": 14,
+      "11": 12
+    },
+    "2022": {
+      "2": 7,
+      "3": 26,
+      "4": 16,
+      "5": 76,
+      "6": 35,
+      "7": 17,
+      "8": 35,
+      "9": 3,
+      "10": 17,
+      "11": 7,
+      "12": 2
+    },
+    "2023": {
+      "1": 3,
+      "2": 7,
+      "3": 34,
+      "4": 66,
+      "5": 20,
+      "6": 40,
+      "7": 31,
+      "8": 38,
+      "9": 47,
+      "10": 43,
+      "11": 13
+    },
+    "2024": {
+      "1": 1,
+      "2": 9,
+      "3": 25,
+      "4": 23,
+      "5": 42,
+      "6": 40,
+      "7": 74,
+      "8": 79,
+      "9": 54,
+      "10": 35,
+      "11": 10,
+      "12": 6
+    },
+    "2025": {
+      "1": 7,
+      "2": 32,
+      "3": 37,
+      "4": 40,
+      "5": 29,
+      "6": 24
+    }
+  },
+  "first_image_coordinates": [
+    [
+      [
+        33.377214,
+        68.177548
+      ],
+      [
+        33.61612322,
+        68.18044424
+      ],
+      [
+        33.61511489,
+        68.10570583
+      ],
+      [
+        33.37815811,
+        68.10419191
+      ],
+      [
+        33.377214,
+        68.177548
+      ]
+    ]
+  ],
+  "high_resolution": 124,
+  "locations_with_multiple_images": 39,
+  "multi_image_locations": [
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2025-03-26T00:00:00.000Z",
+        "latest": "2025-03-26T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.633507527, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2025-03-26T00:00:00.000Z",
+          "id": "ACQ_PNEO3_05535616155398-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2025-03-26T00:00:00.000Z",
+          "id": "ACQ_PNEO3_05535616155398",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2024-08-15T00:00:00.000Z",
+        "latest": "2024-08-15T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.510201883, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.01,
+          "constellation": "pleiades-neo",
+          "date": "2024-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_04713413093431",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.01,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_04713413093431-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2024-04-03T00:00:00.000Z",
+        "latest": "2024-04-03T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.277034164, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2024-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04126711216374",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04126711216374-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2024-04-03T00:00:00.000Z",
+        "latest": "2024-04-03T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.239435166, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2024-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04126711216365",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04126711216365-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2024-03-24T00:00:00.000Z",
+        "latest": "2024-03-24T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.286027107, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2024-03-24T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04111911077731",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-03-24T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04111911077731-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2024-03-20T00:00:00.000Z",
+        "latest": "2024-03-20T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.250637943, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2024-03-20T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04106011022292",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-03-20T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04106011022292-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2024-03-17T00:00:00.000Z",
+        "latest": "2024-03-17T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.620338644, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-03-17T00:00:00.000Z",
+          "id": "ACQ_PNEO3_04120810980480-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2024-03-17T00:00:00.000Z",
+          "id": "ACQ_PNEO3_04120810980480",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-10-08T00:00:00.000Z",
+        "latest": "2023-10-08T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.521339742, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-10-08T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03513408887215-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-10-08T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03513408887215",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-10-08T00:00:00.000Z",
+        "latest": "2023-10-08T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.464098622, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-10-08T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03513408887198-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-10-08T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03513408887198",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-10-05T00:00:00.000Z",
+        "latest": "2023-10-05T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.819390921, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.15,
+          "constellation": "pleiades-neo",
+          "date": "2023-10-05T00:00:00.000Z",
+          "id": "ACQ_PNEO4_03428208845396",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.15,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-10-05T00:00:00.000Z",
+          "id": "ACQ_PNEO4_03428208845396-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-10-05T00:00:00.000Z",
+        "latest": "2023-10-05T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.520070188, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.03,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-10-05T00:00:00.000Z",
+          "id": "ACQ_PNEO4_03428208845368-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.03,
+          "constellation": "pleiades-neo",
+          "date": "2023-10-05T00:00:00.000Z",
+          "id": "ACQ_PNEO4_03428208845368",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-10-02T00:00:00.000Z",
+        "latest": "2023-10-02T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.247109387, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.17,
+          "constellation": "pleiades-neo",
+          "date": "2023-10-02T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03504508803530",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.17,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-10-02T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03504508803530-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-04-30T00:00:00.000Z",
+        "latest": "2023-04-30T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.525992642, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.23,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-30T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02906006900056-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.23,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-30T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02906006900056",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-04-30T00:00:00.000Z",
+        "latest": "2023-04-30T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.462363203, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.2,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-30T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02906006900073",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.2,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-30T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02906006900073-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-04-25T00:00:00.000Z",
+        "latest": "2023-04-25T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.535952416, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-25T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02837106830998",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-25T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02837106830998-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-04-25T00:00:00.000Z",
+        "latest": "2023-04-25T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.457464713, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-25T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02837106831001-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-25T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02837106831001",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-04-13T00:00:00.000Z",
+        "latest": "2023-04-13T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.460102675, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-13T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02819306669169",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-13T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02819306669169-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-04-13T00:00:00.000Z",
+        "latest": "2023-04-13T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.164746609, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-13T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02819306669167-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-13T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02819306669167",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-04-07T00:00:00.000Z",
+        "latest": "2023-04-07T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.311565533, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-07T00:00:00.000Z",
+          "id": "ACQ_PNEO4_02729706590500-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-07T00:00:00.000Z",
+          "id": "ACQ_PNEO4_02729706590500",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-04-03T00:00:00.000Z",
+        "latest": "2023-04-03T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.60284371, 68.2...",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02804506539555-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02804506539555",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-03-23T00:00:00.000Z",
+        "latest": "2023-03-23T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.160344794, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-03-23T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02726706396893-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-03-23T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02726706396893",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2023-03-23T00:00:00.000Z",
+        "latest": "2023-03-23T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.826467034, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-03-23T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02726706396912",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-03-23T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02726706396912-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-10-10T00:00:00.000Z",
+        "latest": "2022-10-10T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.447751315, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.02,
+          "constellation": "pleiades-neo",
+          "date": "2022-10-10T00:00:00.000Z",
+          "id": "ACQ_PNEO4_02034104340600",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.02,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-10-10T00:00:00.000Z",
+          "id": "ACQ_PNEO4_02034104340600-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-08-15T00:00:00.000Z",
+        "latest": "2022-08-15T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.16927655, 68.2...",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01828203593057",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01828203593057-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-08-15T00:00:00.000Z",
+        "latest": "2022-08-15T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.466797295, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.3,
+          "constellation": "pleiades-neo",
+          "date": "2022-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01828203593086",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.3,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01828203593086-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-06-25T00:00:00.000Z",
+        "latest": "2022-06-25T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.162909962, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.12,
+          "constellation": "pleiades-neo",
+          "date": "2022-06-25T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01629702910804",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.12,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-06-25T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01629702910804-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-30T00:00:00.000Z",
+        "latest": "2022-05-30T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.161625669, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-30T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01529702587023",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-30T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01529702587023-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-23T00:00:00.000Z",
+        "latest": "2022-05-23T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.459938108, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506727-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506727",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-23T00:00:00.000Z",
+        "latest": "2022-05-23T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.164635589, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506684-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506684",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-23T00:00:00.000Z",
+        "latest": "2022-05-23T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.162870418, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506704",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506704-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-15T00:00:00.000Z",
+        "latest": "2022-05-15T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.453328439, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.06,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01526702415510",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.06,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01526702415510-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-15T00:00:00.000Z",
+        "latest": "2022-05-15T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.160343464, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.08,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01526702415549-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.08,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01526702415549",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-14T00:00:00.000Z",
+        "latest": "2022-05-14T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.457174421, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.06,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-14T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01506002404827",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.06,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-14T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01506002404827-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-14T00:00:00.000Z",
+        "latest": "2022-05-14T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.158752234, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.13,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-14T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01506002404842",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.13,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-14T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01506002404842-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-06T00:00:00.000Z",
+        "latest": "2022-05-06T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.463965669, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.16,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-06T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01513402319578",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.16,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-06T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01513402319578-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-05T00:00:00.000Z",
+        "latest": "2022-05-05T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.169160998, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.05,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-05T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01511902308520",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.05,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-05T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01511902308520-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-05-05T00:00:00.000Z",
+        "latest": "2022-05-05T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.457466355, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0.08,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-05T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01511902308491",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.08,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-05T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01511902308491-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-04-14T00:00:00.000Z",
+        "latest": "2022-04-14T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.459673038, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-04-14T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01419302089016-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-04-14T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01419302089016",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo-hd15",
+        "pleiades-neo"
+      ],
+      "date_range": {
+        "earliest": "2022-04-14T00:00:00.000Z",
+        "latest": "2022-04-14T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "[[[33.164296785, 68....",
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-04-14T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01419302089025-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-04-14T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01419302089025",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    }
+  ],
+  "sensor_coverage": {
+    "optical": 670,
+    "sar": 75,
+    "unknown": 721
+  },
+  "sensor_types": [
+    "unknown",
+    "optical",
+    "sar"
+  ],
+  "temporal_coverage": {},
+  "total_features": 1466,
+  "unique_locations": 1427,
+  "very_high_resolution": 1342
+}

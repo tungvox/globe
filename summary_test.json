@@ -1,0 +1,3119 @@
+{
+  "average_cloud_cover": 0.2064109645082107,
+  "average_resolution": 0.5305288676671204,
+  "constellation_coverage": {
+    "beijing-3a": 4,
+    "capella-slc": 75,
+    "eros-b": 1,
+    "maxar-15cm": 39,
+    "maxar-30cm": 46,
+    "maxar-50cm": 147,
+    "pleaides": 439,
+    "pleaides-neo": 143,
+    "pleiades": 179,
+    "pleiades-neo": 93,
+    "pleiades-neo-hd15": 39,
+    "skysat": 143,
+    "spot": 116,
+    "triplesat": 2
+  },
+  "constellations": [
+    "pleaides-neo",
+    "spot",
+    "pleaides",
+    "maxar-15cm",
+    "pleiades-neo",
+    "maxar-30cm",
+    "maxar-50cm",
+    "pleiades-neo-hd15",
+    "beijing-3a",
+    "skysat",
+    "triplesat",
+    "eros-b",
+    "capella-slc",
+    "pleiades"
+  ],
+  "date_range": {
+    "date_span_days": 2296,
+    "earliest": "2019-03-02T00:00:00.000Z",
+    "latest": "2025-06-14T00:00:00.000Z",
+    "total_days": 573
+  },
+  "features_last_30_days": 30,
+  "features_per_year": {
+    "2019": {
+      "3": 4,
+      "4": 2,
+      "5": 3,
+      "6": 6,
+      "8": 1,
+      "9": 4
+    },
+    "2020": {
+      "5": 1,
+      "6": 21,
+      "7": 13,
+      "8": 14,
+      "9": 10,
+      "10": 8
+    },
+    "2021": {
+      "1": 3,
+      "2": 21,
+      "3": 27,
+      "4": 32,
+      "5": 15,
+      "6": 42,
+      "7": 10,
+      "8": 29,
+      "9": 24,
+      "10": 14,
+      "11": 12
+    },
+    "2022": {
+      "2": 7,
+      "3": 26,
+      "4": 16,
+      "5": 76,
+      "6": 35,
+      "7": 17,
+      "8": 35,
+      "9": 3,
+      "10": 17,
+      "11": 7,
+      "12": 2
+    },
+    "2023": {
+      "1": 3,
+      "2": 7,
+      "3": 34,
+      "4": 66,
+      "5": 20,
+      "6": 40,
+      "7": 31,
+      "8": 38,
+      "9": 47,
+      "10": 43,
+      "11": 13
+    },
+    "2024": {
+      "1": 1,
+      "2": 9,
+      "3": 25,
+      "4": 23,
+      "5": 42,
+      "6": 40,
+      "7": 74,
+      "8": 79,
+      "9": 54,
+      "10": 35,
+      "11": 10,
+      "12": 6
+    },
+    "2025": {
+      "1": 7,
+      "2": 32,
+      "3": 37,
+      "4": 40,
+      "5": 29,
+      "6": 24
+    }
+  },
+  "first_image_coordinates": [
+    [
+      [
+        33.377214,
+        68.177548
+      ],
+      [
+        33.61612322,
+        68.18044424
+      ],
+      [
+        33.61511489,
+        68.10570583
+      ],
+      [
+        33.37815811,
+        68.10419191
+      ],
+      [
+        33.377214,
+        68.177548
+      ]
+    ]
+  ],
+  "high_resolution": 124,
+  "locations_with_multiple_images": 39,
+  "multi_image_locations": [
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.48116107944444,
+        68.13097042377778
+      ],
+      "date_range": {
+        "earliest": "2025-03-26T00:00:00.000Z",
+        "latest": "2025-03-26T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_1",
+      "polygon_coordinates": [
+        [
+          [
+            33.633507527,
+            68.215971795
+          ],
+          [
+            33.290529642,
+            68.215938412
+          ],
+          [
+            33.291680974,
+            68.090273965
+          ],
+          [
+            33.291691145,
+            68.089497601
+          ],
+          [
+            33.291706317,
+            68.086046531
+          ],
+          [
+            33.632577452,
+            68.085779672
+          ],
+          [
+            33.632622459,
+            68.089237991
+          ],
+          [
+            33.632626672,
+            68.090016052
+          ],
+          [
+            33.633507527,
+            68.215971795
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2025-03-26T00:00:00.000Z",
+          "id": "ACQ_PNEO3_05535616155398-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2025-03-26T00:00:00.000Z",
+          "id": "ACQ_PNEO3_05535616155398",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.34301885372727,
+        67.8491190010303
+      ],
+      "date_range": {
+        "earliest": "2024-08-15T00:00:00.000Z",
+        "latest": "2024-08-15T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_2",
+      "polygon_coordinates": [
+        [
+          [
+            33.510201883,
+            68.368796484
+          ],
+          [
+            33.141603925,
+            68.357611025
+          ],
+          [
+            33.152637179,
+            68.22408305
+          ],
+          [
+            33.152694351,
+            68.223257584
+          ],
+          [
+            33.159497697,
+            68.090237905
+          ],
+          [
+            33.159528374,
+            68.089410348
+          ],
+          [
+            33.163899736,
+            67.956537069
+          ],
+          [
+            33.163911966,
+            67.955709136
+          ],
+          [
+            33.164325668,
+            67.822488468
+          ],
+          [
+            33.164318463,
+            67.821658635
+          ],
+          [
+            33.161293072,
+            67.68828062
+          ],
+          [
+            33.16126313,
+            67.68745037
+          ],
+          [
+            33.1547637,
+            67.553900032
+          ],
+          [
+            33.154712333,
+            67.553069112
+          ],
+          [
+            33.14459211,
+            67.419348705
+          ],
+          [
+            33.144517488,
+            67.418516788
+          ],
+          [
+            33.14417886,
+            67.414818029
+          ],
+          [
+            33.508446558,
+            67.417728361
+          ],
+          [
+            33.508809442,
+            67.421463147
+          ],
+          [
+            33.508891894,
+            67.422303746
+          ],
+          [
+            33.519328226,
+            67.557179883
+          ],
+          [
+            33.51936663,
+            67.55801419
+          ],
+          [
+            33.52065847,
+            67.691246586
+          ],
+          [
+            33.520632253,
+            67.692068092
+          ],
+          [
+            33.525631419,
+            67.826936036
+          ],
+          [
+            33.525790528,
+            67.827813692
+          ],
+          [
+            33.529340094,
+            67.963113513
+          ],
+          [
+            33.529353647,
+            67.963954964
+          ],
+          [
+            33.526886941,
+            68.098370695
+          ],
+          [
+            33.526847968,
+            68.099201521
+          ],
+          [
+            33.520769332,
+            68.233363412
+          ],
+          [
+            33.520726953,
+            68.234199352
+          ],
+          [
+            33.510201883,
+            68.368796484
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.01,
+          "constellation": "pleiades-neo",
+          "date": "2024-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_04713413093431",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.01,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_04713413093431-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.44151361744444,
+        68.12962139133333
+      ],
+      "date_range": {
+        "earliest": "2024-04-03T00:00:00.000Z",
+        "latest": "2024-04-03T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_3",
+      "polygon_coordinates": [
+        [
+          [
+            33.277034164,
+            68.221600759
+          ],
+          [
+            33.278935571,
+            68.088631005
+          ],
+          [
+            33.278959471,
+            68.08780914
+          ],
+          [
+            33.279000472,
+            68.08562277
+          ],
+          [
+            33.645408455,
+            68.080165615
+          ],
+          [
+            33.645474061,
+            68.082329376
+          ],
+          [
+            33.64549831,
+            68.08314092
+          ],
+          [
+            33.646277889,
+            68.215692178
+          ],
+          [
+            33.277034164,
+            68.221600759
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2024-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04126711216374",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04126711216374-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.3888875052,
+        68.161897288
+      ],
+      "date_range": {
+        "earliest": "2024-04-03T00:00:00.000Z",
+        "latest": "2024-04-03T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_4",
+      "polygon_coordinates": [
+        [
+          [
+            33.239435166,
+            68.204727241
+          ],
+          [
+            33.241082523,
+            68.099210007
+          ],
+          [
+            33.612085536,
+            68.097924703
+          ],
+          [
+            33.612399135,
+            68.202897248
+          ],
+          [
+            33.239435166,
+            68.204727241
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2024-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04126711216365",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04126711216365-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.44242699922222,
+        68.13037843955556
+      ],
+      "date_range": {
+        "earliest": "2024-03-24T00:00:00.000Z",
+        "latest": "2024-03-24T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_5",
+      "polygon_coordinates": [
+        [
+          [
+            33.286027107,
+            68.218534474
+          ],
+          [
+            33.287605973,
+            68.089258018
+          ],
+          [
+            33.287624087,
+            68.088456342
+          ],
+          [
+            33.287645333,
+            68.086325246
+          ],
+          [
+            33.636511131,
+            68.083767152
+          ],
+          [
+            33.636548554,
+            68.08588825
+          ],
+          [
+            33.63655928,
+            68.08668349
+          ],
+          [
+            33.637294421,
+            68.21595851
+          ],
+          [
+            33.286027107,
+            68.218534474
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2024-03-24T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04111911077731",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-03-24T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04111911077731-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.3919571408,
+        68.16157873680001
+      ],
+      "date_range": {
+        "earliest": "2024-03-20T00:00:00.000Z",
+        "latest": "2024-03-20T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_6",
+      "polygon_coordinates": [
+        [
+          [
+            33.250637943,
+            68.204450648
+          ],
+          [
+            33.250958377,
+            68.098868648
+          ],
+          [
+            33.603369104,
+            68.097019544
+          ],
+          [
+            33.604182337,
+            68.203104196
+          ],
+          [
+            33.250637943,
+            68.204450648
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2024-03-20T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04106011022292",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-03-20T00:00:00.000Z",
+          "id": "ACQ_PNEO4_04106011022292-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.4800989756,
+        68.1581815366
+      ],
+      "date_range": {
+        "earliest": "2024-03-17T00:00:00.000Z",
+        "latest": "2024-03-17T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_7",
+      "polygon_coordinates": [
+        [
+          [
+            33.620338644,
+            68.204495226
+          ],
+          [
+            33.27004258,
+            68.201928689
+          ],
+          [
+            33.270576399,
+            68.089147874
+          ],
+          [
+            33.619198611,
+            68.090840668
+          ],
+          [
+            33.620338644,
+            68.204495226
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2024-03-17T00:00:00.000Z",
+          "id": "ACQ_PNEO3_04120810980480-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2024-03-17T00:00:00.000Z",
+          "id": "ACQ_PNEO3_04120810980480",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.365712402,
+        68.133166646
+      ],
+      "date_range": {
+        "earliest": "2023-10-08T00:00:00.000Z",
+        "latest": "2023-10-08T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_8",
+      "polygon_coordinates": [
+        [
+          [
+            33.521339742,
+            68.245417987
+          ],
+          [
+            33.170656403,
+            68.243749724
+          ],
+          [
+            33.171930912,
+            68.116875766
+          ],
+          [
+            33.171931292,
+            68.116090402
+          ],
+          [
+            33.1714327,
+            67.998188237
+          ],
+          [
+            33.519768389,
+            67.998165508
+          ],
+          [
+            33.52150366,
+            68.116901799
+          ],
+          [
+            33.521508778,
+            68.117692404
+          ],
+          [
+            33.521339742,
+            68.245417987
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-10-08T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03513408887215-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-10-08T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03513408887215",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.61946806422222,
+        68.13228248066667
+      ],
+      "date_range": {
+        "earliest": "2023-10-08T00:00:00.000Z",
+        "latest": "2023-10-08T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_9",
+      "polygon_coordinates": [
+        [
+          [
+            33.464098622,
+            68.245657948
+          ],
+          [
+            33.465280778,
+            68.116513581
+          ],
+          [
+            33.465283577,
+            68.115714898
+          ],
+          [
+            33.465370197,
+            67.998460449
+          ],
+          [
+            33.812044204,
+            67.99585328
+          ],
+          [
+            33.812988001,
+            68.113757449
+          ],
+          [
+            33.812992717,
+            68.11456027
+          ],
+          [
+            33.81305586,
+            68.244366503
+          ],
+          [
+            33.464098622,
+            68.245657948
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-10-08T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03513408887198-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-10-08T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03513408887198",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.658999822666665,
+        68.12980128666668
+      ],
+      "date_range": {
+        "earliest": "2023-10-05T00:00:00.000Z",
+        "latest": "2023-10-05T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_10",
+      "polygon_coordinates": [
+        [
+          [
+            33.819390921,
+            68.248614773
+          ],
+          [
+            33.459077275,
+            68.244694604
+          ],
+          [
+            33.459747782,
+            68.107124938
+          ],
+          [
+            33.459755661,
+            68.10627535
+          ],
+          [
+            33.461169278,
+            67.993573883
+          ],
+          [
+            33.817152807,
+            67.997758476
+          ],
+          [
+            33.817649861,
+            68.110348521
+          ],
+          [
+            33.817663898,
+            68.111206262
+          ],
+          [
+            33.819390921,
+            68.248614773
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.15,
+          "constellation": "pleiades-neo",
+          "date": "2023-10-05T00:00:00.000Z",
+          "id": "ACQ_PNEO4_03428208845396",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.15,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-10-05T00:00:00.000Z",
+          "id": "ACQ_PNEO4_03428208845396-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.36560352344444,
+        68.13269189311112
+      ],
+      "date_range": {
+        "earliest": "2023-10-05T00:00:00.000Z",
+        "latest": "2023-10-05T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_11",
+      "polygon_coordinates": [
+        [
+          [
+            33.520070188,
+            68.245305456
+          ],
+          [
+            33.172523409,
+            68.244197593
+          ],
+          [
+            33.173510085,
+            68.115439629
+          ],
+          [
+            33.173516846,
+            68.114644205
+          ],
+          [
+            33.174747299,
+            67.997809648
+          ],
+          [
+            33.518251644,
+            67.999090982
+          ],
+          [
+            33.518867704,
+            68.115819303
+          ],
+          [
+            33.518874348,
+            68.116614766
+          ],
+          [
+            33.520070188,
+            68.245305456
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.03,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-10-05T00:00:00.000Z",
+          "id": "ACQ_PNEO4_03428208845368-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.03,
+          "constellation": "pleiades-neo",
+          "date": "2023-10-05T00:00:00.000Z",
+          "id": "ACQ_PNEO4_03428208845368",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.3856143536,
+        68.1650984078
+      ],
+      "date_range": {
+        "earliest": "2023-10-02T00:00:00.000Z",
+        "latest": "2023-10-02T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_12",
+      "polygon_coordinates": [
+        [
+          [
+            33.247109387,
+            68.207131546
+          ],
+          [
+            33.248156873,
+            68.103237428
+          ],
+          [
+            33.592455092,
+            68.101923136
+          ],
+          [
+            33.593241029,
+            68.206068383
+          ],
+          [
+            33.247109387,
+            68.207131546
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.17,
+          "constellation": "pleiades-neo",
+          "date": "2023-10-02T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03504508803530",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.17,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-10-02T00:00:00.000Z",
+          "id": "ACQ_PNEO3_03504508803530-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.36676738022222,
+        68.15818568333333
+      ],
+      "date_range": {
+        "earliest": "2023-04-30T00:00:00.000Z",
+        "latest": "2023-04-30T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_13",
+      "polygon_coordinates": [
+        [
+          [
+            33.525992642,
+            68.245083002
+          ],
+          [
+            33.168232993,
+            68.244010452
+          ],
+          [
+            33.168328173,
+            68.116128692
+          ],
+          [
+            33.168326409,
+            68.11533701
+          ],
+          [
+            33.168324426,
+            68.113225243
+          ],
+          [
+            33.525220868,
+            68.113249103
+          ],
+          [
+            33.525240026,
+            68.115378237
+          ],
+          [
+            33.525248243,
+            68.116176409
+          ],
+          [
+            33.525992642,
+            68.245083002
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.23,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-30T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02906006900056-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.23,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-30T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02906006900056",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.619651407444444,
+        68.15842878333333
+      ],
+      "date_range": {
+        "earliest": "2023-04-30T00:00:00.000Z",
+        "latest": "2023-04-30T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_14",
+      "polygon_coordinates": [
+        [
+          [
+            33.462363203,
+            68.247097179
+          ],
+          [
+            33.462852249,
+            68.117584334
+          ],
+          [
+            33.4628534,
+            68.116780948
+          ],
+          [
+            33.462860772,
+            68.114639001
+          ],
+          [
+            33.815812612,
+            68.111049029
+          ],
+          [
+            33.8157997,
+            68.113211238
+          ],
+          [
+            33.815801208,
+            68.114020577
+          ],
+          [
+            33.81615632,
+            68.244379565
+          ],
+          [
+            33.462363203,
+            68.247097179
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.2,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-30T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02906006900073",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.2,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-30T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02906006900073-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.36800561377778,
+        68.15742552277779
+      ],
+      "date_range": {
+        "earliest": "2023-04-25T00:00:00.000Z",
+        "latest": "2023-04-25T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_15",
+      "polygon_coordinates": [
+        [
+          [
+            33.535952416,
+            68.248173988
+          ],
+          [
+            33.15886049,
+            68.243805625
+          ],
+          [
+            33.158409004,
+            68.112059559
+          ],
+          [
+            33.158378779,
+            68.111242051
+          ],
+          [
+            33.158351922,
+            68.110515391
+          ],
+          [
+            33.535369405,
+            68.113523298
+          ],
+          [
+            33.535381325,
+            68.11425584
+          ],
+          [
+            33.535394767,
+            68.115079965
+          ],
+          [
+            33.535952416,
+            68.248173988
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-25T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02837106830998",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-25T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02837106830998-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.61925293088889,
+        68.15807570844444
+      ],
+      "date_range": {
+        "earliest": "2023-04-25T00:00:00.000Z",
+        "latest": "2023-04-25T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_16",
+      "polygon_coordinates": [
+        [
+          [
+            33.457464713,
+            68.246998006
+          ],
+          [
+            33.457656663,
+            68.117160716
+          ],
+          [
+            33.457654815,
+            68.116357284
+          ],
+          [
+            33.457648107,
+            68.114213032
+          ],
+          [
+            33.821356377,
+            68.110461267
+          ],
+          [
+            33.821333782,
+            68.112629115
+          ],
+          [
+            33.821339184,
+            68.113439351
+          ],
+          [
+            33.821358024,
+            68.244424599
+          ],
+          [
+            33.457464713,
+            68.246998006
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-25T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02837106831001-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-25T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02837106831001",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.61907840666667,
+        68.15864264055556
+      ],
+      "date_range": {
+        "earliest": "2023-04-13T00:00:00.000Z",
+        "latest": "2023-04-13T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_17",
+      "polygon_coordinates": [
+        [
+          [
+            33.460102675,
+            68.246939039
+          ],
+          [
+            33.461561135,
+            68.117595761
+          ],
+          [
+            33.461566106,
+            68.116798465
+          ],
+          [
+            33.461578783,
+            68.114665729
+          ],
+          [
+            33.816252662,
+            68.111929333
+          ],
+          [
+            33.816296972,
+            68.114057119
+          ],
+          [
+            33.816311315,
+            68.114853046
+          ],
+          [
+            33.817933337,
+            68.244006234
+          ],
+          [
+            33.460102675,
+            68.246939039
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-13T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02819306669169",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-13T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02819306669169-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.31004449,
+        68.1934602762
+      ],
+      "date_range": {
+        "earliest": "2023-04-13T00:00:00.000Z",
+        "latest": "2023-04-13T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_18",
+      "polygon_coordinates": [
+        [
+          [
+            33.164746609,
+            68.250275246
+          ],
+          [
+            33.166512779,
+            68.114116547
+          ],
+          [
+            33.526449788,
+            68.108227603
+          ],
+          [
+            33.527766665,
+            68.244406739
+          ],
+          [
+            33.164746609,
+            68.250275246
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-13T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02819306669167-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-13T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02819306669167",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.47669806766666,
+        68.1244986738889
+      ],
+      "date_range": {
+        "earliest": "2023-04-07T00:00:00.000Z",
+        "latest": "2023-04-07T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_19",
+      "polygon_coordinates": [
+        [
+          [
+            33.311565533,
+            68.215645438
+          ],
+          [
+            33.311789066,
+            68.083298903
+          ],
+          [
+            33.311801351,
+            68.08247614
+          ],
+          [
+            33.311812776,
+            68.081744799
+          ],
+          [
+            33.682929654,
+            68.076115355
+          ],
+          [
+            33.682932637,
+            68.076849953
+          ],
+          [
+            33.682936571,
+            68.077676374
+          ],
+          [
+            33.682949488,
+            68.211035665
+          ],
+          [
+            33.311565533,
+            68.215645438
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-07T00:00:00.000Z",
+          "id": "ACQ_PNEO4_02729706590500-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-07T00:00:00.000Z",
+          "id": "ACQ_PNEO4_02729706590500",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.4586634902,
+        68.1629026876
+      ],
+      "date_range": {
+        "earliest": "2023-04-03T00:00:00.000Z",
+        "latest": "2023-04-03T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_20",
+      "polygon_coordinates": [
+        [
+          [
+            33.60284371,
+            68.208443673
+          ],
+          [
+            33.242067916,
+            68.203569001
+          ],
+          [
+            33.243386672,
+            68.09441875
+          ],
+          [
+            33.602175443,
+            68.099638341
+          ],
+          [
+            33.60284371,
+            68.208443673
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02804506539555-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-04-03T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02804506539555",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.32571187333333,
+        68.1579731978889
+      ],
+      "date_range": {
+        "earliest": "2023-03-23T00:00:00.000Z",
+        "latest": "2023-03-23T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_21",
+      "polygon_coordinates": [
+        [
+          [
+            33.160344794,
+            68.249487903
+          ],
+          [
+            33.162460768,
+            68.116902305
+          ],
+          [
+            33.162471113,
+            68.116084189
+          ],
+          [
+            33.162498212,
+            68.113900692
+          ],
+          [
+            33.530500994,
+            68.108880492
+          ],
+          [
+            33.530489702,
+            68.11106577
+          ],
+          [
+            33.530485281,
+            68.111884582
+          ],
+          [
+            33.531811202,
+            68.244064945
+          ],
+          [
+            33.160344794,
+            68.249487903
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-03-23T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02726706396893-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-03-23T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02726706396893",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.6763893824,
+        68.1924334216
+      ],
+      "date_range": {
+        "earliest": "2023-03-23T00:00:00.000Z",
+        "latest": "2023-03-23T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_22",
+      "polygon_coordinates": [
+        [
+          [
+            33.826467034,
+            68.244994954
+          ],
+          [
+            33.451489912,
+            68.244636328
+          ],
+          [
+            33.453131539,
+            68.113334908
+          ],
+          [
+            33.824391393,
+            68.114205964
+          ],
+          [
+            33.826467034,
+            68.244994954
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2023-03-23T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02726706396912",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2023-03-23T00:00:00.000Z",
+          "id": "ACQ_PNEO3_02726706396912-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.61737527522222,
+        68.15743003311111
+      ],
+      "date_range": {
+        "earliest": "2022-10-10T00:00:00.000Z",
+        "latest": "2022-10-10T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_23",
+      "polygon_coordinates": [
+        [
+          [
+            33.447751315,
+            68.249074272
+          ],
+          [
+            33.44939431,
+            68.115381742
+          ],
+          [
+            33.449395125,
+            68.11455786
+          ],
+          [
+            33.449395828,
+            68.113825523
+          ],
+          [
+            33.827522483,
+            68.109585382
+          ],
+          [
+            33.827543069,
+            68.110312919
+          ],
+          [
+            33.827566176,
+            68.111131404
+          ],
+          [
+            33.830057856,
+            68.243926924
+          ],
+          [
+            33.447751315,
+            68.249074272
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.02,
+          "constellation": "pleiades-neo",
+          "date": "2022-10-10T00:00:00.000Z",
+          "id": "ACQ_PNEO4_02034104340600",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.02,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-10-10T00:00:00.000Z",
+          "id": "ACQ_PNEO4_02034104340600-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.3109422384,
+        68.19242849060001
+      ],
+      "date_range": {
+        "earliest": "2022-08-15T00:00:00.000Z",
+        "latest": "2022-08-15T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_24",
+      "polygon_coordinates": [
+        [
+          [
+            33.16927655,
+            68.244467908
+          ],
+          [
+            33.170487684,
+            68.111457354
+          ],
+          [
+            33.522285203,
+            68.114478956
+          ],
+          [
+            33.523385205,
+            68.247270327
+          ],
+          [
+            33.16927655,
+            68.244467908
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01828203593057",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01828203593057-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.61979477277778,
+        68.15876882577777
+      ],
+      "date_range": {
+        "earliest": "2022-08-15T00:00:00.000Z",
+        "latest": "2022-08-15T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_25",
+      "polygon_coordinates": [
+        [
+          [
+            33.466797295,
+            68.244197954
+          ],
+          [
+            33.467710604,
+            68.117127068
+          ],
+          [
+            33.467715159,
+            68.116341941
+          ],
+          [
+            33.46772694,
+            68.114248572
+          ],
+          [
+            33.810076205,
+            68.114444896
+          ],
+          [
+            33.810094939,
+            68.116542957
+          ],
+          [
+            33.810101838,
+            68.117329803
+          ],
+          [
+            33.81113268,
+            68.244488287
+          ],
+          [
+            33.466797295,
+            68.244197954
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.3,
+          "constellation": "pleiades-neo",
+          "date": "2022-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01828203593086",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.3,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-08-15T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01828203593086-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.310015135600004,
+        68.193268996
+      ],
+      "date_range": {
+        "earliest": "2022-06-25T00:00:00.000Z",
+        "latest": "2022-06-25T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_26",
+      "polygon_coordinates": [
+        [
+          [
+            33.162909962,
+            68.251725058
+          ],
+          [
+            33.162916981,
+            68.113329359
+          ],
+          [
+            33.530313923,
+            68.105246222
+          ],
+          [
+            33.53102485,
+            68.244319283
+          ],
+          [
+            33.162909962,
+            68.251725058
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.12,
+          "constellation": "pleiades-neo",
+          "date": "2022-06-25T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01629702910804",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.12,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-06-25T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01629702910804-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.32616058077778,
+        68.15776754566667
+      ],
+      "date_range": {
+        "earliest": "2022-05-30T00:00:00.000Z",
+        "latest": "2022-05-30T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_27",
+      "polygon_coordinates": [
+        [
+          [
+            33.161625669,
+            68.248435834
+          ],
+          [
+            33.161385993,
+            68.116855932
+          ],
+          [
+            33.161384581,
+            68.116039885
+          ],
+          [
+            33.161377104,
+            68.113864269
+          ],
+          [
+            33.531873653,
+            68.108868806
+          ],
+          [
+            33.531901602,
+            68.111058636
+          ],
+          [
+            33.531910692,
+            68.111880002
+          ],
+          [
+            33.532360264,
+            68.244468713
+          ],
+          [
+            33.161625669,
+            68.248435834
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-30T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01529702587023",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-30T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01529702587023-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.618895069222226,
+        68.13253436355555
+      ],
+      "date_range": {
+        "earliest": "2022-05-23T00:00:00.000Z",
+        "latest": "2022-05-23T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_28",
+      "polygon_coordinates": [
+        [
+          [
+            33.459938108,
+            68.248547864
+          ],
+          [
+            33.461255946,
+            68.116958804
+          ],
+          [
+            33.461257826,
+            68.116147633
+          ],
+          [
+            33.462810713,
+            67.998508886
+          ],
+          [
+            33.814868398,
+            67.994832881
+          ],
+          [
+            33.816066146,
+            68.112141217
+          ],
+          [
+            33.816086057,
+            68.11294853
+          ],
+          [
+            33.817834321,
+            68.244175593
+          ],
+          [
+            33.459938108,
+            68.248547864
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506727-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506727",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.32597133466666,
+        68.15805285588888
+      ],
+      "date_range": {
+        "earliest": "2022-05-23T00:00:00.000Z",
+        "latest": "2022-05-23T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_29",
+      "polygon_coordinates": [
+        [
+          [
+            33.164635589,
+            68.245894892
+          ],
+          [
+            33.16643567,
+            68.116299189
+          ],
+          [
+            33.166445797,
+            68.115498992
+          ],
+          [
+            33.166468797,
+            68.113362998
+          ],
+          [
+            33.525936838,
+            68.112120509
+          ],
+          [
+            33.525958331,
+            68.11424831
+          ],
+          [
+            33.525965293,
+            68.115045416
+          ],
+          [
+            33.527260108,
+            68.244110505
+          ],
+          [
+            33.164635589,
+            68.245894892
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506684-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506684",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.32578562288889,
+        68.12951809488888
+      ],
+      "date_range": {
+        "earliest": "2022-05-23T00:00:00.000Z",
+        "latest": "2022-05-23T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_30",
+      "polygon_coordinates": [
+        [
+          [
+            33.162870418,
+            68.251044775
+          ],
+          [
+            33.164858831,
+            68.11103497
+          ],
+          [
+            33.16486984,
+            68.110170874
+          ],
+          [
+            33.16602744,
+            67.9975487
+          ],
+          [
+            33.526331406,
+            67.991407726
+          ],
+          [
+            33.527675592,
+            68.103931983
+          ],
+          [
+            33.527682071,
+            68.104797288
+          ],
+          [
+            33.52888459,
+            68.244681763
+          ],
+          [
+            33.162870418,
+            68.251044775
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506704",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-23T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01519302506704-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.61811200233333,
+        68.13182642044444
+      ],
+      "date_range": {
+        "earliest": "2022-05-15T00:00:00.000Z",
+        "latest": "2022-05-15T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_31",
+      "polygon_coordinates": [
+        [
+          [
+            33.453328439,
+            68.245912692
+          ],
+          [
+            33.454696724,
+            68.115248745
+          ],
+          [
+            33.454709013,
+            68.11444175
+          ],
+          [
+            33.456803799,
+            67.997642445
+          ],
+          [
+            33.821079746,
+            67.99656852
+          ],
+          [
+            33.822249837,
+            68.11296913
+          ],
+          [
+            33.822259982,
+            68.11377331
+          ],
+          [
+            33.824552042,
+            68.2439685
+          ],
+          [
+            33.453328439,
+            68.245912692
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.06,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01526702415510",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.06,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01526702415510-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.325529252777784,
+        68.13180065722221
+      ],
+      "date_range": {
+        "earliest": "2022-05-15T00:00:00.000Z",
+        "latest": "2022-05-15T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_32",
+      "polygon_coordinates": [
+        [
+          [
+            33.160343464,
+            68.251535618
+          ],
+          [
+            33.162322725,
+            68.116490776
+          ],
+          [
+            33.162331296,
+            68.115658888
+          ],
+          [
+            33.163843667,
+            67.998053394
+          ],
+          [
+            33.528820663,
+            67.99109559
+          ],
+          [
+            33.53010728,
+            68.108479217
+          ],
+          [
+            33.530106046,
+            68.109313942
+          ],
+          [
+            33.53154467,
+            68.244042872
+          ],
+          [
+            33.160343464,
+            68.251535618
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.08,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01526702415549-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.08,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-15T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01526702415549",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.61863243177778,
+        68.13180742944445
+      ],
+      "date_range": {
+        "earliest": "2022-05-14T00:00:00.000Z",
+        "latest": "2022-05-14T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_33",
+      "polygon_coordinates": [
+        [
+          [
+            33.457174421,
+            68.243675367
+          ],
+          [
+            33.458324758,
+            68.11469203
+          ],
+          [
+            33.458322514,
+            68.113894807
+          ],
+          [
+            33.457442339,
+            67.996687696
+          ],
+          [
+            33.819181972,
+            67.997021253
+          ],
+          [
+            33.820301922,
+            68.115050999
+          ],
+          [
+            33.820306104,
+            68.115853752
+          ],
+          [
+            33.819463435,
+            68.245715594
+          ],
+          [
+            33.457174421,
+            68.243675367
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.06,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-14T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01506002404827",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.06,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-14T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01506002404827-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.32571421977778,
+        68.15642026111111
+      ],
+      "date_range": {
+        "earliest": "2022-05-14T00:00:00.000Z",
+        "latest": "2022-05-14T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_34",
+      "polygon_coordinates": [
+        [
+          [
+            33.158752234,
+            68.243779487
+          ],
+          [
+            33.158558062,
+            68.109421129
+          ],
+          [
+            33.158553276,
+            68.108591072
+          ],
+          [
+            33.158540236,
+            68.106377648
+          ],
+          [
+            33.534378012,
+            68.113011899
+          ],
+          [
+            33.534406447,
+            68.115244726
+          ],
+          [
+            33.534417006,
+            68.116082056
+          ],
+          [
+            33.535070471,
+            68.251494846
+          ],
+          [
+            33.158752234,
+            68.243779487
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.13,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-14T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01506002404842",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.13,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-14T00:00:00.000Z",
+          "id": "ACQ_PNEO4_01506002404842-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.61977768777778,
+        68.13192224255555
+      ],
+      "date_range": {
+        "earliest": "2022-05-06T00:00:00.000Z",
+        "latest": "2022-05-06T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_35",
+      "polygon_coordinates": [
+        [
+          [
+            33.463965669,
+            68.245911072
+          ],
+          [
+            33.46507579,
+            68.115315964
+          ],
+          [
+            33.465079193,
+            68.114508863
+          ],
+          [
+            33.465195165,
+            67.998856528
+          ],
+          [
+            33.812891541,
+            67.996295431
+          ],
+          [
+            33.813865056,
+            68.11255211
+          ],
+          [
+            33.813869672,
+            68.113363144
+          ],
+          [
+            33.814091435,
+            68.244585999
+          ],
+          [
+            33.463965669,
+            68.245911072
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.16,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-06T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01513402319578",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.16,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-06T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01513402319578-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.32668491677778,
+        68.13280022177779
+      ],
+      "date_range": {
+        "earliest": "2022-05-05T00:00:00.000Z",
+        "latest": "2022-05-05T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_36",
+      "polygon_coordinates": [
+        [
+          [
+            33.169160998,
+            68.244783244
+          ],
+          [
+            33.170799497,
+            68.117179463
+          ],
+          [
+            33.170808197,
+            68.116391968
+          ],
+          [
+            33.172122911,
+            67.99810378
+          ],
+          [
+            33.520985698,
+            67.997576523
+          ],
+          [
+            33.521958123,
+            68.115779569
+          ],
+          [
+            33.521967717,
+            68.11656628
+          ],
+          [
+            33.523200112,
+            68.244037925
+          ],
+          [
+            33.169160998,
+            68.244783244
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.05,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-05T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01511902308520",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.05,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-05T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01511902308520-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.61881164811111,
+        68.13217791622222
+      ],
+      "date_range": {
+        "earliest": "2022-05-05T00:00:00.000Z",
+        "latest": "2022-05-05T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_37",
+      "polygon_coordinates": [
+        [
+          [
+            33.457466355,
+            68.244429438
+          ],
+          [
+            33.458620038,
+            68.113304811
+          ],
+          [
+            33.458624489,
+            68.112490708
+          ],
+          [
+            33.460518633,
+            67.993761376
+          ],
+          [
+            33.817878425,
+            67.998281458
+          ],
+          [
+            33.818905422,
+            68.116811891
+          ],
+          [
+            33.818918954,
+            68.117624107
+          ],
+          [
+            33.820906162,
+            68.248468019
+          ],
+          [
+            33.457466355,
+            68.244429438
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0.08,
+          "constellation": "pleiades-neo",
+          "date": "2022-05-05T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01511902308491",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0.08,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-05-05T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01511902308491-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.61892772322222,
+        68.15768487366667
+      ],
+      "date_range": {
+        "earliest": "2022-04-14T00:00:00.000Z",
+        "latest": "2022-04-14T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_38",
+      "polygon_coordinates": [
+        [
+          [
+            33.459673038,
+            68.248712306
+          ],
+          [
+            33.461208339,
+            68.116387024
+          ],
+          [
+            33.461212304,
+            68.115571083
+          ],
+          [
+            33.461221399,
+            68.113395751
+          ],
+          [
+            33.816407777,
+            68.109009829
+          ],
+          [
+            33.816458196,
+            68.111177418
+          ],
+          [
+            33.816476551,
+            68.111990463
+          ],
+          [
+            33.818018867,
+            68.244207683
+          ],
+          [
+            33.459673038,
+            68.248712306
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-04-14T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01419302089016-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-04-14T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01419302089016",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    },
+    {
+      "constellations": [
+        "pleiades-neo",
+        "pleiades-neo-hd15"
+      ],
+      "coordinates": [
+        33.32605481755556,
+        68.15812437111111
+      ],
+      "date_range": {
+        "earliest": "2022-04-14T00:00:00.000Z",
+        "latest": "2022-04-14T00:00:00.000Z"
+      },
+      "image_count": 2,
+      "location_id": "Location_39",
+      "polygon_coordinates": [
+        [
+          [
+            33.164296785,
+            68.245257973
+          ],
+          [
+            33.166273817,
+            68.115948006
+          ],
+          [
+            33.166280272,
+            68.115149285
+          ],
+          [
+            33.166285429,
+            68.114439278
+          ],
+          [
+            33.526466371,
+            68.113589485
+          ],
+          [
+            33.526476378,
+            68.114297868
+          ],
+          [
+            33.526486993,
+            68.115094764
+          ],
+          [
+            33.527630528,
+            68.244084708
+          ],
+          [
+            33.164296785,
+            68.245257973
+          ]
+        ]
+      ],
+      "sample_images": [
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo-hd15",
+          "date": "2022-04-14T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01419302089025-PNEO-HD15",
+          "resolution": 0.15,
+          "sensor_type": "unknown"
+        },
+        {
+          "cloud_cover": 0,
+          "constellation": "pleiades-neo",
+          "date": "2022-04-14T00:00:00.000Z",
+          "id": "ACQ_PNEO3_01419302089025",
+          "resolution": 0.3,
+          "sensor_type": "unknown"
+        }
+      ],
+      "sensor_types": [
+        "unknown"
+      ]
+    }
+  ],
+  "sensor_coverage": {
+    "optical": 670,
+    "sar": 75,
+    "unknown": 721
+  },
+  "sensor_types": [
+    "sar",
+    "optical",
+    "unknown"
+  ],
+  "temporal_coverage": {},
+  "total_features": 1466,
+  "unique_locations": 1427,
+  "very_high_resolution": 1342
+}
