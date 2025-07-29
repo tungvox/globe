@@ -402,11 +402,23 @@ def google_news():
             # Extract news items
             news_items = []
             for entry in feed.entries[:10]:  # Limit to 10 items
+                # Clean HTML from summary
+                summary = entry.summary if hasattr(entry, 'summary') else ''
+                # Remove HTML tags and decode HTML entities
+                import re
+                import html
+                # Remove HTML tags
+                summary = re.sub(r'<[^>]+>', '', summary)
+                # Decode HTML entities
+                summary = html.unescape(summary)
+                # Clean up extra whitespace
+                summary = ' '.join(summary.split())
+                
                 news_items.append({
                     'title': entry.title,
                     'link': entry.link,
                     'published': entry.published,
-                    'summary': entry.summary if hasattr(entry, 'summary') else ''
+                    'summary': summary
                 })
             
             return jsonify({'news': news_items}), 200
