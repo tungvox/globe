@@ -104,6 +104,7 @@ const StatisticBar = ({theme}) => {
     const [newsArticles, setNewsArticles] = useState([]);
     const [newsError, setNewsError] = useState(null);
     const [usingCache, setUsingCache] = useState(false);
+    const [newsAttempted, setNewsAttempted] = useState(false);
     // News cache
     const [newsCache, setNewsCache] = useState({});
     // News topics (static for now, can be replaced with API-driven list)
@@ -146,6 +147,9 @@ const StatisticBar = ({theme}) => {
     useEffect(() => {
         setIsEditingName(false);
         setEditName('');
+        setNewsAttempted(false);
+        setNewsArticles([]);
+        setNewsError(null);
     }, [selectedMarker]);
 
     // Debug useEffect for daily view
@@ -518,6 +522,7 @@ const StatisticBar = ({theme}) => {
                     setNewsError(null);
                     setNewsArticles([]);
                     setUsingCache(false);
+                    setNewsAttempted(true);
 
                     const url = buildApiUrl(`/google_news?q=${encodeURIComponent(query)}`);
                     console.log('Google News API URL being called:', url);
@@ -1840,8 +1845,16 @@ const StatisticBar = ({theme}) => {
                                     {(() => {
                                         if (newsLoading) {
                                             return (
-                                                <Box sx={{ textAlign: 'center', py: 2 }}>
-                                                    <Typography variant="body2" sx={{ color: '#d4d4dc', mb: 0.5, fontSize: '0.8rem' }}>
+                                                <Box sx={{ 
+                                                    display: 'flex', 
+                                                    flexDirection: 'column', 
+                                                    alignItems: 'center', 
+                                                    justifyContent: 'center', 
+                                                    py: 3,
+                                                    gap: 2
+                                                }}>
+                                                    <LoadingOrb size={40} />
+                                                    <Typography variant="body2" sx={{ color: '#d4d4dc', fontSize: '0.8rem' }}>
                                                         🔍 Searching for news articles...
                                                     </Typography>
                                                     <Typography variant="body2" sx={{ color: '#d4d4dc', opacity: 0.7, fontSize: '0.7rem' }}>
@@ -1859,6 +1872,27 @@ const StatisticBar = ({theme}) => {
                                                     </Typography>
                                                     <Typography variant="body2" sx={{ color: '#d4d4dc', fontSize: '0.75rem' }}>
                                                         {newsError}
+                                                    </Typography>
+                                                </Box>
+                                            );
+                                        }
+                                        
+                                        if (!newsAttempted) {
+                                            return (
+                                                <Box sx={{ 
+                                                    display: 'flex', 
+                                                    flexDirection: 'column', 
+                                                    alignItems: 'center', 
+                                                    justifyContent: 'center', 
+                                                    py: 3,
+                                                    gap: 2
+                                                }}>
+                                                    <LoadingOrb size={40} />
+                                                    <Typography variant="body2" sx={{ color: '#d4d4dc', fontSize: '0.8rem' }}>
+                                                        🔍 Preparing to search for news...
+                                                    </Typography>
+                                                    <Typography variant="body2" sx={{ color: '#d4d4dc', opacity: 0.7, fontSize: '0.7rem' }}>
+                                                        Select a location to load news articles
                                                     </Typography>
                                                 </Box>
                                             );
