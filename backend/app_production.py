@@ -179,7 +179,7 @@ def fetch_demo_data():
 
     try:
         for url in demo_urls:
-            response = requests.get(url)
+            response = requests.get(url, timeout=10)
             if response.status_code == 200:
                 demo_data = response.json()
                 for feature in demo_data.get('features', []):
@@ -190,12 +190,67 @@ def fetch_demo_data():
             else:
                 logger.error(f"Failed to fetch data from {url}: {response.status_code}")
 
+        # If no external data was fetched, use fallback demo data
+        if not grouped_data:
+            logger.info("No external demo data available, using fallback data")
+            grouped_data = {
+                "demo_olenja": [
+                    {
+                        "type": "Feature",
+                        "collection": "demo_olenja",
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [[[37.5, 55.7], [37.6, 55.7], [37.6, 55.8], [37.5, 55.8], [37.5, 55.7]]]
+                        },
+                        "properties": {
+                            "datetime": "2023-01-15T10:30:00Z",
+                            "cloudCover": 15,
+                            "title": "Demo Olenja Image"
+                        }
+                    }
+                ],
+                "demo_belaya": [
+                    {
+                        "type": "Feature",
+                        "collection": "demo_belaya",
+                        "geometry": {
+                            "type": "Polygon",
+                            "coordinates": [[[37.4, 55.6], [37.5, 55.6], [37.5, 55.7], [37.4, 55.7], [37.4, 55.6]]]
+                        },
+                        "properties": {
+                            "datetime": "2023-01-16T11:45:00Z",
+                            "cloudCover": 25,
+                            "title": "Demo Belaya Image"
+                        }
+                    }
+                ]
+            }
+
         # Cache the grouped data
         cached_demo_data = grouped_data
         return jsonify(grouped_data), 200
     except Exception as e:
         logger.error(f"Error fetching demo data: {str(e)}")
-        return jsonify({"error": "Failed to fetch demo data"}), 500
+        # Return fallback data on error
+        fallback_data = {
+            "demo_olenja": [
+                {
+                    "type": "Feature",
+                    "collection": "demo_olenja",
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [[[37.5, 55.7], [37.6, 55.7], [37.6, 55.8], [37.5, 55.8], [37.5, 55.7]]]
+                    },
+                    "properties": {
+                        "datetime": "2023-01-15T10:30:00Z",
+                        "cloudCover": 15,
+                        "title": "Demo Olenja Image"
+                    }
+                }
+            ]
+        }
+        cached_demo_data = fallback_data
+        return jsonify(fallback_data), 200
 
 @app.route('/summary/<collection_name>', methods=['GET'])
 def get_collection_summary(collection_name):
