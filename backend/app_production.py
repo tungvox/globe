@@ -380,6 +380,26 @@ def get_collection_locations(collection_name):
         logger.error(f"Error fetching locations: {e}")
         return jsonify({"error": "Failed to fetch locations"}), 500
 
+@app.route('/test_news', methods=['GET'])
+def test_news():
+    """Test endpoint to verify HTML sanitization"""
+    import re
+    import html
+    
+    # Test HTML content
+    test_html = '<a href="https://example.com">Test Link</a>&nbsp;&nbsp;<font color="#6f6f6f">Test Source</font>'
+    
+    # Clean HTML
+    cleaned = re.sub(r'<[^>]+>', '', test_html)
+    cleaned = html.unescape(cleaned)
+    cleaned = ' '.join(cleaned.split())
+    
+    return jsonify({
+        'original': test_html,
+        'cleaned': cleaned,
+        'timestamp': datetime.now().isoformat()
+    }), 200
+
 @app.route('/google_news', methods=['GET'])
 def google_news():
     """Fetch Google News RSS feed"""
