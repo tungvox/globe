@@ -109,8 +109,13 @@ const StatisticBar = ({theme}) => {
     // News cache
     const [newsCache, setNewsCache] = useState({});
     // News topics (will be populated from API)
-    const [NEWS_TOPICS, setNEWS_TOPICS] = useState(['All']);
-    const [categoriesLoading, setCategoriesLoading] = useState(false);
+    const [NEWS_TOPICS, setNEWS_TOPICS] = useState([
+        'All', 'Politics', 'Economy', 'Technology', 'Health', 'Environment',
+        'Sports', 'Entertainment', 'Science', 'Education', 'Crime', 'Military',
+        'Diplomacy', 'Transport', 'Energy', 'Weather', 'Culture', 'Business',
+        'International', 'Local'
+    ]);
+
     const [selectedTopic, setSelectedTopic] = useState('All');
     // Geocode cache to avoid hitting Nominatim rate limit
     const geocodeCache = {};
@@ -143,42 +148,7 @@ const StatisticBar = ({theme}) => {
         }
     }, [selectedTopic]);
 
-    // Fetch categories when News tab is opened
-    useEffect(() => {
-        console.log('Category fetch effect triggered:', {
-            tabIndex,
-            selectedMarker: !!selectedMarker,
-            NEWS_TOPICS_length: NEWS_TOPICS.length,
-            NEWS_TOPICS: NEWS_TOPICS
-        });
-        
-        if (tabIndex === 2 && selectedMarker) {
-            console.log('News tab opened - fetching categories');
-            setCategoriesLoading(true);
-            const fetchCategories = async () => {
-                try {
-                    // Fetch categories from dedicated endpoint
-                    const url = buildApiUrl('/news_categories');
-                    console.log('Fetching categories from:', url);
-                    const response = await fetch(url);
-                    const data = await response.json();
-                    console.log('Categories API response:', data);
-                    
-                    if (data.categories && Array.isArray(data.categories)) {
-                        setNEWS_TOPICS(data.categories);
-                        console.log('Categories fetched:', data.categories);
-                    } else {
-                        console.log('No categories in response');
-                    }
-                } catch (error) {
-                    console.error('Error fetching categories:', error);
-                } finally {
-                    setCategoriesLoading(false);
-                }
-            };
-            fetchCategories();
-        }
-    }, [tabIndex, selectedMarker]);
+
 
     // Debug useEffect for daily view
     useEffect(() => {
@@ -1808,19 +1778,12 @@ const StatisticBar = ({theme}) => {
                                         <Typography variant="body2" sx={{ color: '#feda6a', fontWeight: 600, fontSize: '0.7rem' }}>
                                             Topic:
                                         </Typography>
-                                        {categoriesLoading && (
-                                            <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                                                <LoadingOrb size={16} />
-                                                <Typography variant="body2" sx={{ color: '#d4d4dc', fontSize: '0.6rem' }}>
-                                                    Loading...
-                                                </Typography>
-                                            </Box>
-                                        )}
+
                                         <Select
                                             value={selectedTopic}
                                             onChange={e => setSelectedTopic(e.target.value)}
                                             size="small"
-                                            disabled={categoriesLoading}
+
                                             sx={{ 
                                                 minWidth: 120, 
                                                 background: 'rgba(255,255,255,0.05)', 
