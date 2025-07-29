@@ -145,7 +145,14 @@ const StatisticBar = ({theme}) => {
 
     // Fetch categories when News tab is opened
     useEffect(() => {
-        if (tabIndex === 2 && selectedMarker && NEWS_TOPICS.length === 1) {
+        console.log('Category fetch effect triggered:', {
+            tabIndex,
+            selectedMarker: !!selectedMarker,
+            NEWS_TOPICS_length: NEWS_TOPICS.length,
+            NEWS_TOPICS: NEWS_TOPICS
+        });
+        
+        if (tabIndex === 2 && selectedMarker) {
             console.log('News tab opened - fetching categories');
             setCategoriesLoading(true);
             const fetchCategories = async () => {
