@@ -19,7 +19,9 @@ app = Flask(__name__)
 
 # Production CORS configuration
 allowed_origins = [
-    "https://globe-jvaox3vb4-tungvoxs-projects.vercel.app",  # Your new Vercel domain
+    "https://globe-6d4elgnr0-tungvoxs-projects.vercel.app",  # Your latest Vercel domain
+    "https://globe-pi-six.vercel.app",  # Your custom Vercel domain
+    "https://globe-jvaox3vb4-tungvoxs-projects.vercel.app",  # Your previous Vercel domain
     "https://globe-d7f6cmn3t-tungvoxs-projects.vercel.app",  # Your old Vercel domain
     "https://globe-1-hduo.onrender.com",  # Your backend domain
     "http://localhost:3000",  # For local development
@@ -31,6 +33,18 @@ import os
 vercel_url = os.getenv('VERCEL_URL')
 if vercel_url:
     allowed_origins.append(f"https://{vercel_url}")
+
+# Add common Vercel domain patterns
+vercel_patterns = [
+    "https://*.vercel.app",
+    "https://*.vercel.app/*"
+]
+
+# Add any additional domains from environment
+additional_domains = os.getenv('ADDITIONAL_CORS_DOMAINS', '').split(',')
+for domain in additional_domains:
+    if domain.strip():
+        allowed_origins.append(domain.strip())
 
 CORS(app, origins=allowed_origins, supports_credentials=True)
 
