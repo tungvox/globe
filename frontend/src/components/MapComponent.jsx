@@ -472,20 +472,34 @@ const MapComponent = () => {
     try {
       console.log('Fetching demo data from backend...');
       const response = await fetch(buildApiUrl('/fetch_demo_data'));
+      console.log('Response status:', response.status);
+      console.log('Response headers:', response.headers);
+      
       if (!response.ok) {
         throw new Error(`Error fetching demo data: ${response.statusText}`);
       }
+      
       const groupedData = await response.json();
       console.log('Demo data fetched successfully:', Object.keys(groupedData));
+      console.log('Demo data structure:', groupedData);
+      
+      if (Object.keys(groupedData).length === 0) {
+        console.warn('No demo data collections found');
+        return;
+      }
+      
       setDemoData(groupedData);
       // Add markers for each collection
       Object.entries(groupedData).forEach(([collection, features]) => {
-        const representativePoint = calculateCentroid(features[0].geometry.coordinates[0]);
-        handleAddMarker(representativePoint[0], representativePoint[1], collection);
+        if (features && features.length > 0) {
+          const representativePoint = calculateCentroid(features[0].geometry.coordinates[0]);
+          handleAddMarker(representativePoint[0], representativePoint[1], collection);
+        }
       });
       console.log('Demo markers added to map');
     } catch (error) {
       console.error('Error fetching demo data from backend:', error);
+      console.error('Error details:', error.message);
     }
   };
 
