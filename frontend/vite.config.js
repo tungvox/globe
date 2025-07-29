@@ -13,5 +13,18 @@ export default defineConfig({
       },
       '/google_news': 'http://localhost:5000',
     }
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          mui: ['@mui/material', '@mui/icons-material'],
+          mapbox: ['mapbox-gl', 'react-map-gl']
+        }
+      }
+    }
   }
 })
