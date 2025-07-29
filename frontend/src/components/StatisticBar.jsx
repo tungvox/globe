@@ -108,30 +108,8 @@ const StatisticBar = ({theme}) => {
     const [topicChangeCounter, setTopicChangeCounter] = useState(0);
     // News cache
     const [newsCache, setNewsCache] = useState({});
-    // News topics (static for now, can be replaced with API-driven list)
-    const NEWS_TOPICS = [
-        'All',
-        'Conflict',
-        'Disaster',
-        'Economy',
-        'Health',
-        'Politics',
-        'Environment',
-        'Crime',
-        'Technology',
-        'Military',
-        'Diplomacy',
-        'Protest',
-        'Energy',
-        'Transport',
-        'Education',
-        'Sports',
-        'Culture',
-        'Weather',
-        'Elections',
-        'Terrorism',
-        'Migration',
-    ];
+    // News topics (will be populated from API)
+    const [NEWS_TOPICS, setNEWS_TOPICS] = useState(['All']);
     const [selectedTopic, setSelectedTopic] = useState('All');
     // Geocode cache to avoid hitting Nominatim rate limit
     const geocodeCache = {};
@@ -476,40 +454,9 @@ const StatisticBar = ({theme}) => {
         return `${(cloudCover * 100).toFixed(1)}%`;
     };
 
-    // Function to detect category from article content
-    const detectCategory = (article) => {
-        const text = `${article.title} ${article.summary}`.toLowerCase();
-        
-        const categoryKeywords = {
-            'Conflict': ['war', 'conflict', 'battle', 'fighting', 'military', 'attack', 'violence', 'bombing', 'strike'],
-            'Disaster': ['disaster', 'earthquake', 'flood', 'hurricane', 'tsunami', 'fire', 'accident', 'emergency'],
-            'Economy': ['economy', 'economic', 'finance', 'market', 'trade', 'business', 'investment', 'stock', 'gdp'],
-            'Health': ['health', 'medical', 'disease', 'hospital', 'vaccine', 'treatment', 'covid', 'pandemic'],
-            'Politics': ['politics', 'political', 'election', 'government', 'president', 'minister', 'parliament'],
-            'Environment': ['environment', 'climate', 'pollution', 'green', 'sustainability', 'carbon', 'renewable'],
-            'Crime': ['crime', 'criminal', 'police', 'arrest', 'investigation', 'trial', 'court', 'law'],
-            'Technology': ['technology', 'tech', 'digital', 'ai', 'software', 'internet', 'cyber', 'innovation'],
-            'Military': ['military', 'defense', 'army', 'navy', 'air force', 'weapon', 'defense'],
-            'Diplomacy': ['diplomacy', 'diplomatic', 'embassy', 'foreign', 'international', 'treaty'],
-            'Protest': ['protest', 'demonstration', 'rally', 'strike', 'movement', 'activist'],
-            'Energy': ['energy', 'oil', 'gas', 'electricity', 'power', 'fuel', 'renewable'],
-            'Transport': ['transport', 'transportation', 'traffic', 'road', 'airport', 'railway', 'vehicle'],
-            'Education': ['education', 'school', 'university', 'student', 'learning', 'academic'],
-            'Sports': ['sport', 'football', 'basketball', 'tennis', 'olympic', 'championship', 'game'],
-            'Culture': ['culture', 'art', 'music', 'film', 'theater', 'festival', 'heritage'],
-            'Weather': ['weather', 'climate', 'temperature', 'storm', 'rain', 'sunny', 'forecast'],
-            'Elections': ['election', 'vote', 'polling', 'candidate', 'campaign', 'ballot'],
-            'Terrorism': ['terrorism', 'terrorist', 'bomb', 'attack', 'extremist', 'security'],
-            'Migration': ['migration', 'refugee', 'immigration', 'border', 'asylum', 'migrant']
-        };
-        
-        for (const [category, keywords] of Object.entries(categoryKeywords)) {
-            if (keywords.some(keyword => text.includes(keyword))) {
-                return category;
-            }
-        }
-        
-        return 'General';
+    // Function to get category from article (from API)
+    const getCategory = (article) => {
+        return article.category || 'General';
     };
 
     // Fetch news when News tab, marker, or topic changes
@@ -595,6 +542,12 @@ const StatisticBar = ({theme}) => {
                                 }));
                                 setNewsArticles(data.news);
                                 setNewsError(null);
+                                
+                                // Update available categories from API response
+                                if (data.available_categories && Array.isArray(data.available_categories)) {
+                                    const categories = ['All', ...data.available_categories];
+                                    setNEWS_TOPICS(categories);
+                                }
                             } else {
                                 setNewsArticles([]);
                                 setNewsError('No news articles found for this location.');
@@ -2047,7 +2000,7 @@ const StatisticBar = ({theme}) => {
                                                                         ml: 'auto'
                                                                     }}>
                                                                         <Typography variant="body2" sx={{ color: '#3498db', fontSize: '0.6rem', fontWeight: 600 }}>
-                                                                            {detectCategory(article)}
+                                                                            {getCategory(article)}
                                                                         </Typography>
                                                                     </Box>
                                                                 </Box>

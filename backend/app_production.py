@@ -425,8 +425,10 @@ def google_news():
             # Parse the RSS feed
             feed = feedparser.parse(response.content)
             
-            # Extract news items
+            # Extract news items with categories
             news_items = []
+            available_categories = set()
+            
             for entry in feed.entries[:limit]:  # Use configurable limit
                 # Clean HTML from summary
                 summary = entry.summary if hasattr(entry, 'summary') else ''
@@ -440,14 +442,70 @@ def google_news():
                 # Clean up extra whitespace
                 summary = ' '.join(summary.split())
                 
+                # Extract category from Google News RSS feed
+                category = 'General'
+                if hasattr(entry, 'category'):
+                    category = entry.category
+                elif hasattr(entry, 'tags') and entry.tags:
+                    category = entry.tags[0].term
+                elif hasattr(entry, 'source') and hasattr(entry.source, 'title'):
+                    # Try to extract category from source or other metadata
+                    source_text = entry.source.title.lower()
+                    if any(keyword in source_text for keyword in ['politics', 'government']):
+                        category = 'Politics'
+                    elif any(keyword in source_text for keyword in ['business', 'economy', 'finance']):
+                        category = 'Economy'
+                    elif any(keyword in source_text for keyword in ['sports', 'athletics']):
+                        category = 'Sports'
+                    elif any(keyword in source_text for keyword in ['technology', 'tech']):
+                        category = 'Technology'
+                    elif any(keyword in source_text for keyword in ['health', 'medical']):
+                        category = 'Health'
+                    elif any(keyword in source_text for keyword in ['environment', 'climate']):
+                        category = 'Environment'
+                    elif any(keyword in source_text for keyword in ['crime', 'police']):
+                        category = 'Crime'
+                    elif any(keyword in source_text for keyword in ['military', 'defense']):
+                        category = 'Military'
+                    elif any(keyword in source_text for keyword in ['culture', 'arts']):
+                        category = 'Culture'
+                    elif any(keyword in source_text for keyword in ['education', 'school']):
+                        category = 'Education'
+                    elif any(keyword in source_text for keyword in ['transport', 'traffic']):
+                        category = 'Transport'
+                    elif any(keyword in source_text for keyword in ['energy', 'oil', 'gas']):
+                        category = 'Energy'
+                    elif any(keyword in source_text for keyword in ['weather', 'climate']):
+                        category = 'Weather'
+                    elif any(keyword in source_text for keyword in ['election', 'vote']):
+                        category = 'Elections'
+                    elif any(keyword in source_text for keyword in ['terrorism', 'terrorist']):
+                        category = 'Terrorism'
+                    elif any(keyword in source_text for keyword in ['migration', 'refugee']):
+                        category = 'Migration'
+                    elif any(keyword in source_text for keyword in ['protest', 'demonstration']):
+                        category = 'Protest'
+                    elif any(keyword in source_text for keyword in ['diplomacy', 'foreign']):
+                        category = 'Diplomacy'
+                    elif any(keyword in source_text for keyword in ['conflict', 'war']):
+                        category = 'Conflict'
+                    elif any(keyword in source_text for keyword in ['disaster', 'emergency']):
+                        category = 'Disaster'
+                
+                available_categories.add(category)
+                
                 news_items.append({
                     'title': entry.title,
                     'link': entry.link,
                     'published': entry.published,
-                    'summary': summary
+                    'summary': summary,
+                    'category': category
                 })
             
-            return jsonify({'news': news_items}), 200
+            return jsonify({
+                'news': news_items,
+                'available_categories': list(available_categories)
+            }), 200
         else:
             logger.warning(f"Google News RSS returned status {response.status_code}, using fallback")
             raise Exception(f"RSS feed returned status {response.status_code}")
