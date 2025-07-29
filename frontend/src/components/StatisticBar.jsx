@@ -105,6 +105,7 @@ const StatisticBar = ({theme}) => {
     const [newsError, setNewsError] = useState(null);
     const [usingCache, setUsingCache] = useState(false);
     const [newsAttempted, setNewsAttempted] = useState(false);
+    const [topicChangeCounter, setTopicChangeCounter] = useState(0);
     // News cache
     const [newsCache, setNewsCache] = useState({});
     // News topics (static for now, can be replaced with API-driven list)
@@ -155,10 +156,11 @@ const StatisticBar = ({theme}) => {
     // Reset news state when topic changes
     useEffect(() => {
         if (tabIndex === 2 && selectedMarker) {
-            console.log('Topic changed to:', selectedTopic, '- resetting news state');
+            console.log('Topic changed to:', selectedTopic, '- resetting news state and incrementing counter');
             setNewsAttempted(false);
             setNewsArticles([]);
             setNewsError(null);
+            setTopicChangeCounter(prev => prev + 1);
         }
     }, [selectedTopic]);
 
@@ -500,8 +502,8 @@ const StatisticBar = ({theme}) => {
                         query = 'news';
                     }
 
-                    // Create cache key with topic included
-                    const cacheKey = `${selectedMarker.name}_${selectedTopic}_${query}`;
+                    // Create cache key with topic included and change counter
+                    const cacheKey = `${selectedMarker.name}_${selectedTopic}_${query}_${topicChangeCounter}`;
                     console.log('News cache key:', cacheKey);
                     console.log('Available cache keys:', Object.keys(newsCache));
                     
