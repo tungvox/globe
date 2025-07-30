@@ -386,6 +386,7 @@ def get_news_categories():
     categories = [
         'All',
         'Business',
+        'Conflict',
         'Crime',
         'Culture',
         'Diplomacy',
